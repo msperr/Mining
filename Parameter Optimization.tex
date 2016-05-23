@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section{Parameter Optimization}
+
+\subsection{Parameters}
+
+\paragraph{Examples}
+
+\begin{itemize}
+	\item{friction coefficients in the cable reels}
+	\item{inertia of the arm and in the engine}
+	\item{mass and mass distribution of the arm}
+\end{itemize}
+
+\paragraph{Why?} \hfill\\
+
+Parameters are often hard to measure in reality. Control and motion are known on a real excavator. Thus, we identify the parameters this way. \\
+
+Parameters can change in a long time usage, due to frequent temperature changes, abrasion and dirt. Then, one can measure the actual parameters only this way.
+
+\subsection{Black Box}
+
+For this purpose, we have received a real excavator model from Siemens. Since the content is valuable and complex, the model is a black box, implemented in MatLab. \\
+
+Input:
+
+\begin{itemize}
+	\item{Control: Actual handling of the operator in the mine}
+	\item{Parameters}
+\end{itemize}
+
+Output:
+
+\begin{itemize}
+	\item{Motion: Actual position of the excavator shovel over time}
+\end{itemize}
+
+For given trajectories of control and motion, we have to identify the parameters.
+
+\subsection{Optimization}
+
+Since we have no information about the black box model, we will have to use derivative-free optimization-methods. \\
+
+For verifying our optimization procedure, we will use the model we have developed so far. For this model, we have all information and we can apply this as a reference, e.g. for error searching.
+
+\end{document}
