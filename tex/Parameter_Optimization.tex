@@ -1,0 +1,49 @@
+\section{Parameter Optimization}
+
+\begin{frame}[c]
+\frametitle{Parameters}
+Examples:
+\begin{itemize}
+	\item{friction}
+	\item{inertia}
+	\item{mass of sidearm}
+\end{itemize}
+\vspace{0.5cm}
+Why do we need parameter optimization?
+\begin{itemize}
+	\item{hard to measure}
+	\item{may change over time}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\frametitle{Blackbox Model}
+\begin{itemize}
+	\item{contains a realistic model from Siemens}
+	\item{content valuable}
+\end{itemize}
+\vspace{0.5cm}
+\begin{columns}[t]
+	\column{.5\textwidth}
+		\textbf{Input}
+		\begin{itemize}
+			\item{control}
+			\item{parameters}
+		\end{itemize}
+	\column{.5\textwidth}
+		\textbf{Output}
+		\begin{itemize}
+			\item{motion}
+		\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimization}
+\begin{itemize}
+	\item{no information about blackbox \\ $\Rightarrow$ derivative-free optimization}
+	\vspace{0.5cm}
+	\item{need own model for testing}
+\end{itemize}
+\end{frame}
+
