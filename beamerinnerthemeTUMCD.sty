@@ -1,0 +1,36 @@
+\mode<presentation>
+
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{items}[square]
+\setbeamertemplate{enumerate items}[default]
+
+\beamertemplatenavigationsymbolsempty
+
+% Zwischenfolien
+\providecommand*{\sectionframe}{%
+\@ifstar{\sectionframeStar}{\sectionframeNoStar}%
+}
+\newcommand{\sectionframeStar}{%
+  \begin{frame}[c] %vertically centered
+%    \frametitle{\empty}
+    \begin{center}
+      \Large
+      \color{structure}
+      \insertsectionhead
+    \end{center}
+  \end{frame}
+}%
+
+\newcommand{\sectionframeNoStar}{%
+  \begin{frame}[c] %vertically centered
+%    \frametitle{\empty}
+    \begin{center}
+      \Large
+      \color{structure}
+      \insertsectionnumber. \insertsectionhead
+    \end{center}
+  \end{frame}
+}%
+
+\mode<all>
+
