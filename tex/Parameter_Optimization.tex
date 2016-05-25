@@ -4,9 +4,9 @@
 \frametitle{Parameters}
 Examples:
 \begin{itemize}
-	\item{friction}
-	\item{inertia}
-	\item{mass of sidearm}
+	\item{Friction coefficients $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, $\mu_{P_2}$}
+	\item{masses $M_1$, $M_2$}
+	\item{inertia $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$}
 \end{itemize}
 \vspace{0.5cm}
 Why do we need parameter optimization?
@@ -20,28 +20,29 @@ Why do we need parameter optimization?
 \frametitle{Blackbox Model}
 \begin{itemize}
 	\item{contains a realistic model from Siemens}
-	\item{content valuable}
+	\item{confidential information}
 \end{itemize}
 \vspace{0.5cm}
-\begin{columns}[t]
-	\column{.5\textwidth}
-		\textbf{Input}
-		\begin{itemize}
-			\item{control}
-			\item{parameters}
-		\end{itemize}
-	\column{.5\textwidth}
-		\textbf{Output}
-		\begin{itemize}
-			\item{motion}
-		\end{itemize}
-\end{columns}
+tba
+%\begin{columns}[t]
+	%\column{.5\textwidth}
+		%\textbf{Input}
+		%\begin{itemize}
+			%\item{control}
+			%\item{parameters}
+		%\end{itemize}
+	%\column{.5\textwidth}
+		%\textbf{Output}
+		%\begin{itemize}
+			%\item{motion}
+		%\end{itemize}
+%\end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Optimization}
+\frametitle{Parameter Optimization}
 \begin{itemize}
-	\item{no information about blackbox \\ $\Rightarrow$ derivative-free optimization}
+	\item{black box $\Rightarrow$ derivative-free optimization}
 	\vspace{0.5cm}
 	\item{need own model for testing}
 \end{itemize}
