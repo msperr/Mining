@@ -293,7 +293,8 @@
 	
 	Discretize time interval:
 	\begin{align*}
-	  &[0,T] = \left\{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T \right\} \\
+	  &[0,T] \rightarrow \left\{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T 
+\right\} \\
 	\end{align*}
 	
 	Discretize state and control:
@@ -306,17 +307,24 @@
 
 \begin{frame}
 	
-	\frametitle{tba}
+	\frametitle{Discretization of the ODE}
 	
-	Solve ODE for every time step $h_n=t_{n+1}-t_n$ (Forward Euler):
+% 	Solve ODE for every time step $h_n=t_{n+1}-t_n$ (Explicit Euler):
+	Explicit Euler for every time step $h_n=t_{n+1}-t_n$:
 	\begin{align*}
-	  &\tilde{x}_{n+1} = x_n + h_n f(x_n,u_n,p) \\
+	  &x_{n+1} \approx \tilde{x}_{n+1} = x_n + h_n f(x_n,u_n,p) \\
 	\end{align*}
+	
+	Discrete constraint:
+	\begin{align*}
+	  &0 = x_{n+1} - \tilde{x}_{n+1} \quad \forall n = 0,\ldots,m-1
+	\end{align*}
+
 	
 \end{frame}
 
 \begin{frame}
-	\frametitle{Multiple Shooting}
+	\frametitle{Discretization of the ODE}
 	
 	\begin{figure}[bth]
 	  \begin{center}
