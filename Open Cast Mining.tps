@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=26
+TopLine=42
+Cursor=1154
 
 [Frame1]
 Flags=0
@@ -32,13 +32,67 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=Parameter Optimization.tex
+Document=tex\Parameter_Optimization.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=172
+Cursor=0
+
+[Frame2]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1596
+NormalPos.bottom=553
+Class=LaTeXView
+Document=tex\Physical_Model.tex
+
+[Frame2_View0,0]
+TopLine=282
+Cursor=7847
+
+[Frame3]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1596
+NormalPos.bottom=553
+Class=LaTeXView
+Document=tex\Problem_Setting.tex
+
+[Frame3_View0,0]
+TopLine=96
+Cursor=2872
+
+[Frame4]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1596
+NormalPos.bottom=553
+Class=LaTeXView
+Document=tex\Visualization.tex
+
+[Frame4_View0,0]
+TopLine=0
+Cursor=0
 
 [SessionInfo]
-FrameCount=2
-ActiveFrame=1
+FrameCount=5
+ActiveFrame=2
 

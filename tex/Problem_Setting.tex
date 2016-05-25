@@ -17,7 +17,7 @@
 	\frametitle{Problem Setting}
 	\begin{figure}[bth]
 		\centering
-		\includegraphics[width=0.4\linewidth]{img/Problem_1}
+		\includegraphics[width=.5\linewidth]{img/Problem_1}
 	\end{figure}
 \end{frame}
 
@@ -25,7 +25,7 @@
 	\frametitle{Problem Setting}
 	\begin{figure}[bth]
 		\centering
-		\includegraphics[width=0.4\linewidth]{img/Problem_2}
+		\includegraphics[width=.4\linewidth]{img/Problem_2}
 	\end{figure}
 	\begin{itemize}
 		\item{arm element fixed to base}
@@ -37,27 +37,27 @@
 	\frametitle{Problem Setting}
 	\begin{figure}[bth]
 		\centering
-		\includegraphics[width=0.4\linewidth]{img/Problem_3}
+		\includegraphics[width=.4\linewidth]{img/Problem_3}
 	\end{figure}
 	\centering
-	\begin{tabular}{ll}
-		\textcolor[rgb]{0,0.69,0.32}{green} & shovel motion \textbf{back} and \textbf{forth} \\
-		\textcolor[rgb]{0.18,0.46,0.71}{blue} & shovel motion \textbf{up} and \textbf{down} \\
-	\end{tabular}
+	\begin{itemize}
+		\item{\makebox[1cm][l]{\textcolor[rgb]{0,0.69,0.32}{green}} shovel motion \textbf{back} and \textbf{forth}}
+		\item{\makebox[1cm][l]{\textcolor[rgb]{0.18,0.46,0.71}{blue}} shovel motion \textbf{up} and \textbf{down}} \\
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[c]
 	\frametitle{Main Problems}
 	\begin{enumerate}
-		\item{Phyiscal Modelling}
+		\item{Physical Modelling}
 			\begin{itemize}
-				\item{modelling rope properties}
-				\item{determining information needed for calibration of model}
+				\item{Modelling rope properties}
+				\item{Determining information needed for calibration of model}
 			\end{itemize}
 		\vspace{0.5cm}
 		\item{Parameter Optimization}
 			\begin{itemize}
-				\item{optimizing parameters for a complex, unknown model (black box)}
+				\item{Optimizing parameters for a complex, unknown model (black box)}
 			\end{itemize}
 	\end{enumerate}
 \end{frame}
@@ -69,23 +69,26 @@
 	\vspace{0.5cm}
 	
 	\begin{columns}[t]
+		\column{.1\linewidth}
 		\column{.3\linewidth}
 			\centering
-			\fbox{\parbox{\textwidth}{building an accurate model}}
+			\fbox{\parbox{\textwidth}{Building an accurate model}}
 		\column{.2\linewidth}
 			\centering
 			$\Rightarrow$
 		\column{.3\linewidth}
 			\centering
-			\fbox{\parbox{\textwidth}{better visualization of control and motion}}
+			\fbox{\parbox{\textwidth}{Good description of the effects of control and motion}}
+		\column{.1\linewidth}
 	\end{columns}
 	
-	\vspace{0.5cm}
+	\vspace{1cm}
 	
-	to consider:
+	To consider:
 	\begin{itemize}
-		\item{friction in cable reels}
-		\item{deformation of ropes}
+		\item{Friction in cable reels}
+		\item{Deformation of ropes}
+		\item{etc.}
 	\end{itemize}
 \end{frame}
 
@@ -93,9 +96,9 @@
 	\frametitle{Parameter Optimization}
 	What are parameters?
 	\begin{itemize}
-		\item{friction coefficients}
-		\item{mass}
-		\item{inertia}
+		\item{Friction coefficients}
+		\item{Mass}
+		\item{Inertia}
 	\end{itemize}
 	
 	\vspace{0.5cm}
@@ -105,14 +108,16 @@
 	\vspace{0.5cm}
 	
 	\begin{columns}
+		\column{.1\textwidth}
 		\column{.3\textwidth}
 			\centering
-			\fbox{\parbox{\textwidth}{accurate and realistic parameters}}
+			\fbox{\parbox{\textwidth}{Accurate and realistic parameters}}
 		\column{.2\textwidth}
 			\centering
 			$\Rightarrow$
 		\column{.3\textwidth}
-			\fbox{\parbox{\textwidth}{better prediction and planning of motion}}
+			\fbox{\parbox{\textwidth}{Better prediction and planning of motion}}
+		 \column{.1\textwidth}
 	\end{columns}
 \end{frame}
 

@@ -10,7 +10,7 @@
 		T & kinetic energy\\
 		V & potentials\\
 		F & non-conservative external forces\\
-		r & vector pointing to origin of force F\\ %position vector
+		r & points of actions of forces\\ %position vector
 		q & free variables\\
 		Q & generalized forces\\ \\
 	\end{tabular}
@@ -19,7 +19,7 @@
 	&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
 	\frac{\partial T}{\partial q_i} +
 	\frac{\partial V}{\partial q_i}
-	= Q_i \\ \\
+	= Q_i \\
 	& Q = \left(\frac{\partial r}{\partial q}\right)^T F\\
 	\end{align*}
 		
@@ -29,7 +29,15 @@
 	\frametitle{Physical Model of Excavator}
 	
 	%left, bottom, right, top
-	\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+	
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+		\column{.1\linewidth}
+		\column{.3\linewidth}
+	\end{columns}
 	
 \end{frame}
 
@@ -40,7 +48,16 @@
 	
 	%first fix coordinate system $\rightarrow$ consider positions vectors, coordinates of mass points,... in this system\\
 	
-	\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+	
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+		\column{.1\linewidth}
+		\column{.3\linewidth}
+			coordinate system
+	\end{columns}
 	
 \end{frame}
 
@@ -49,7 +66,20 @@
 	
 	%think of degrees of freedom $\rightarrow$ angle and length side arm $\rightarrow$ forces in the system will depend on excavator configuration and therefore on $s$ and $\theta$\\
 	
-	\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_dof2}
+	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_dof2}
+	
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_dof2}
+		\column{.1\linewidth}
+		\column{.3\linewidth}
+			degrees of freedom
+			\begin{itemize}
+				\item{length $s$}
+				\item{tilt angle $\theta$}
+			\end{itemize}
+	\end{columns}
 	
 	% s distance between attachment point and upper cable reel of green pulley
 	
@@ -58,7 +88,20 @@
 \begin{frame}
 	\frametitle{Physical Model of Excavator}
 	
-	\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+	
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+		\column{.1\linewidth}
+		\column{.3\linewidth}
+			movable centers of gravity of
+			\begin{itemize}
+				\item{shovel $M_1$}
+				\item{arm $M_2$}
+			\end{itemize}
+	\end{columns}
 	
 \end{frame}
 
@@ -72,47 +115,45 @@
 	Assumptions to the model:\\
 	$ $ \\
 	\begin{itemize}
-		\item ropes do not have masses
-		\item consider shovel as point mass % attached on the side arm
-		\item no slack between ropes and cable reels
+		\item no mass for the ropes
+		\item shovel as point mass % attached on the side arm
+		\item no slack/friction between ropes and cable reels
 		% ropes and cable reel move with same velocity
 		% only bearing friction (friction within cable reels)
 	\end{itemize}
 	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Kinetic Energy T}
-	
-	Example: energies of $M_2$ 
-	\begin{align*}
-		&E_{\text{kin},M_2} = \frac{1}{2}\ M_2\ \| 
-		v_{O,M_2}(s,\theta,\dot{s},\dot{\theta}) \|^2 \\
-		&E_{\text{rot},M_2} = \frac{1}{2}\ I_{M_2}(s)\ \dot{\theta}^2 \\
-	\end{align*}
-	
-	all kinetic energies:
-	\begin{align*}
-	T\ =\ \ & E_{\text{kin},M_1} + E_{\text{kin},M_2} + E_{\text{rot},M_2}  \\
-	& + E_{\text{rot},B_1} + E_{\text{rot},B_2} + E_{\text{rot},P_1} + E_{\text{rot},P_2} \\
-	\end{align*}
-\end{frame}
+%\begin{frame}
+	%\frametitle{Kinetic Energy T}
+	%
+	%Example: energies of $M_2$ 
+	%\begin{align*}
+		%&E_{\text{kin},M_2} = \frac{1}{2}\ M_2\ \| 
+		%v_{O,M_2}(s,\theta,\dot{s},\dot{\theta}) \|^2 \\
+		%&E_{\text{rot},M_2} = \frac{1}{2}\ I_{M_2}(s)\ \dot{\theta}^2 \\
+	%\end{align*}
+	%
+	%all kinetic energies:
+	%\begin{align*}
+	%T\ =\ \ & E_{\text{kin},M_1} + E_{\text{kin},M_2} + E_{\text{rot},M_2}  \\
+	%& + E_{\text{rot},B_1} + E_{\text{rot},B_2} + E_{\text{rot},P_1} + E_{\text{rot},P_2} \\
+	%\end{align*}
+%\end{frame}
 
-\begin{frame}
-	\frametitle{Potential V}
-	
-	Example: potential of $M_2$
-	\begin{align*}
-		& V_{M_2} = M_2\ g\ h(s,\theta) \\
-	\end{align*}
-	
-	all potentials:
-	\begin{align*}
-		& V = V_{M_1} + V_{M_2} \\
-	\end{align*}
-\end{frame}
-
-
+%\begin{frame}
+	%\frametitle{Potential V}
+	%
+	%Example: potential of $M_2$
+	%\begin{align*}
+		%& V_{M_2} = M_2\ g\ h(s,\theta) \\
+	%\end{align*}
+	%
+	%all potentials:
+	%\begin{align*}
+		%& V = V_{M_1} + V_{M_2} \\
+	%\end{align*}
+%\end{frame}
 
 \begin{frame}
 	\frametitle{Involved Forces}
@@ -152,47 +193,47 @@
 
 \end{frame}
 
-\begin{frame}
-	\frametitle{Generalized Forces Q}
-	
-	Example: force at $A_2$:
-	\begin{align*}
-	  &F_{A_2} = \left[ \frac{\tau_{B_2}}{r_{B_2}} - \mu_{B_2} 
-	  \frac{\dot{s}}{r_{B_2}} - \mu_{P_2} \frac{\dot{s}}{r_{P_2}} \right]
-	  \left(
-	  \begin{matrix}
-	    \cos(\theta) \\
-	    \sin(\theta) \\
-	  \end{matrix}
-	  \right) \\
-	\end{align*}
-	
-	all generalized forces:
-	\begin{align*}
-	  &Q_s = \left( \frac{\partial r_{A_1}}{\partial s} \right)^T F_{A_1} 
-	  + \left( \frac{\partial r_{A_2}}{\partial s} \right)^T F_{A_2} \\
-	  &Q_{\theta} = \left( \frac{\partial r_{A_1}}{\partial \theta} 
-	  \right)^T F_{A_1} + \left( \frac{\partial r_{A_2}}{\partial \theta} 
-	  \right)^T F_{A_2} \\
-	\end{align*}
-\end{frame}
+%\begin{frame}
+	%\frametitle{Generalized Forces Q}
+	%
+	%Example: force at $A_2$:
+	%\begin{align*}
+	  %&F_{A_2} = \left[ \frac{\tau_{B_2}}{r_{B_2}} - \mu_{B_2} 
+	  %\frac{\dot{s}}{r_{B_2}} - \mu_{P_2} \frac{\dot{s}}{r_{P_2}} \right]
+	  %\left(
+	  %\begin{matrix}
+	    %\cos(\theta) \\
+	    %\sin(\theta) \\
+	  %\end{matrix}
+	  %\right) \\
+	%\end{align*}
+	%
+	%all generalized forces:
+	%\begin{align*}
+	  %&Q_s = \left( \frac{\partial r_{A_1}}{\partial s} \right)^T F_{A_1} 
+	  %+ \left( \frac{\partial r_{A_2}}{\partial s} \right)^T F_{A_2} \\
+	  %&Q_{\theta} = \left( \frac{\partial r_{A_1}}{\partial \theta} 
+	  %\right)^T F_{A_1} + \left( \frac{\partial r_{A_2}}{\partial \theta} 
+	  %\right)^T F_{A_2} \\
+	%\end{align*}
+%\end{frame}
+
+%\begin{frame}
+	%\frametitle{Parameters}
+	%
+	%\begin{tabular}{ll}
+	  %& \\
+	  %masses & $M_1$, $M_2$ \\
+	  %&\\
+	  %inertia of pulleys & $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$ \\
+	  %&\\
+	  %friction coefficients & $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, 
+	  %$\mu_{P_2}$  \\
+	%\end{tabular}
+%\end{frame}
 
 \begin{frame}
-	\frametitle{Parameters}
-	
-	\begin{tabular}{ll}
-	  & \\
-	  masses & $M_1$, $M_2$ \\
-	  &\\
-	  inertia of pulleys & $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$ \\
-	  &\\
-	  friction coefficients & $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, 
-	  $\mu_{P_2}$  \\
-	\end{tabular}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Lagrangean Formalism}
+	\frametitle{Lagrange Formalism}
 	
 	\begin{align*}
 	  &\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{s}}\right) -
@@ -210,7 +251,7 @@
 \begin{frame}[c]
 	\frametitle{Resulting ODE}
 	
-	Second order ODE from Lagrange formalism:
+	Second order ODE from Lagrange Formalism:
 	\begin{align*}
 	  &A(x,p)
 	  \begin{pmatrix} 
@@ -245,9 +286,14 @@
 \begin{frame}
 	\frametitle{Discretization of the ODE}
 	
+	%Discretize time interval:
+	%\begin{align*}
+	  %&[0,T] = [t_0,t_1] \cup \ldots \cup [t_{m-1},t_m] \\
+	%\end{align*}
+	
 	Discretize time interval:
 	\begin{align*}
-	  &[0,T] = [t_0,t_1] \cup \ldots \cup [t_{m-1},t_m] \\
+	  &[0,T] = \{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T \} \\
 	\end{align*}
 	
 	Discretize state and control:
@@ -256,10 +302,17 @@
 	  &u_n = u(t_n) \\
 	\end{align*}
 	
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{tba}
+	
 	Solve ODE for every time step $h_n=t_{n+1}-t_n$ (Forward Euler):
 	\begin{align*}
 	  &\tilde{x}_{n+1} = x_n + h_n f(x_n,u_n,p) \\
 	\end{align*}
+	
 \end{frame}
 
 \begin{frame}
