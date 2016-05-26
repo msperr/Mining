@@ -48,77 +48,134 @@
 
 \begin{frame}[c]
 	\frametitle{Main Problems}
-	\begin{enumerate}
-		\item{Physical Modelling}
-			\begin{itemize}
-				\item{Modelling rope properties}
-				\item{Determining information needed for calibration of model}
-			\end{itemize}
-		\vspace{0.5cm}
-		\item{Parameter Optimization}
-			\begin{itemize}
-				\item{Optimizing parameters for a complex, unknown model (black box)}
-			\end{itemize}
-	\end{enumerate}
+	\onslide<1->
+		\begin{enumerate}
+			\item{Physical Modelling}
+				\begin{itemize}
+					\item{Modelling rope properties}
+					\item{Determining information needed for calibration of model}
+				\end{itemize}
+			\vspace{0.5cm}
+	\onslide<2>
+			\item{Parameter Optimization}
+				\begin{itemize}
+					\item{Optimizing parameters for a complex, unknown model (black box)}
+				\end{itemize}
+		\end{enumerate}
 \end{frame}
+
+%\begin{frame}[c]
+	%\frametitle{Physical Modelling}
+	%\onslide<1->
+		%Why?
+		%\vspace{0.5cm}
+		%\begin{columns}[t]
+			%\column{.1\linewidth}
+			%\column{.3\linewidth}
+				%\centering
+				%\fbox{\parbox{\textwidth}{Building an accurate model}}
+			%\column{.2\linewidth}
+				%\centering
+				%$\Rightarrow$
+			%\column{.3\linewidth}
+				%\centering
+				%\fbox{\parbox{\textwidth}{Good description of the effects of control and motion}}
+			%\column{.1\linewidth}
+		%\end{columns}
+	%\onslide<2>
+		%\vspace{1cm}
+		%To consider:
+		%\begin{itemize}
+			%\item{Friction in cable reels}
+			%\item{Deformation of ropes}
+			%\item{etc.}
+		%\end{itemize}
+%\end{frame}
 
 \begin{frame}[c]
 	\frametitle{Physical Modelling}
-	Why?
-	
+	\onslide<1->
+		Why?
+		\begin{columns}
+			\column{.4\textwidth}
+				\centering
+				\begin{tcolorbox}[width=\linewidth,colback={green}]
+					Building an accurate model
+				\end{tcolorbox}
+			\column{.2\textwidth}
+				\centering
+				\Huge{$\Rightarrow$}
+			\column{.4\textwidth}
+				\centering
+				\begin{tcolorbox}[width=\linewidth,colback={green}]
+					Good description of the effects of control and motion
+				\end{tcolorbox}
+		\end{columns}
 	\vspace{0.5cm}
-	
-	\begin{columns}[t]
-		\column{.1\linewidth}
-		\column{.3\linewidth}
-			\centering
-			\fbox{\parbox{\textwidth}{Building an accurate model}}
-		\column{.2\linewidth}
-			\centering
-			$\Rightarrow$
-		\column{.3\linewidth}
-			\centering
-			\fbox{\parbox{\textwidth}{Good description of the effects of control and motion}}
-		\column{.1\linewidth}
-	\end{columns}
-	
-	\vspace{1cm}
-	
-	To consider:
-	\begin{itemize}
-		\item{Friction in cable reels}
-		\item{Deformation of ropes}
-		\item{etc.}
-	\end{itemize}
+	\onslide<2>
+		To consider:
+		\begin{itemize}
+			\item{Friction in cable reels}
+			\item{Deformation of ropes}
+			\item{etc.}
+		\end{itemize}
 \end{frame}
+
+%\begin{frame}[c]
+	%\frametitle{Parameter Optimization}
+	%\onslide<1->
+		%What are parameters?
+		%\begin{itemize}
+			%\item{Friction coefficients}
+			%\item{Mass}
+			%\item{Inertia}
+		%\end{itemize}
+		%
+		%\vspace{0.5cm}
+	%
+	%\onslide<2>
+		%Why?
+	%
+		%\vspace{0.5cm}
+	%
+		%\begin{columns}
+			%\column{.1\textwidth}
+			%\column{.3\textwidth}
+				%\centering
+				%\fbox{\parbox{\textwidth}{Accurate and realistic parameters}}
+			%\column{.2\textwidth}
+				%\centering
+				%$\Rightarrow$
+			%\column{.3\textwidth}
+				%\fbox{\parbox{\textwidth}{Better prediction and planning of motion}}
+			%\column{.1\textwidth}
+		%\end{columns}
+%\end{frame}
 
 \begin{frame}[c]
 	\frametitle{Parameter Optimization}
-	What are parameters?
-	\begin{itemize}
-		\item{Friction coefficients}
-		\item{Mass}
-		\item{Inertia}
-	\end{itemize}
-	
+	\onslide<1->
+		What are parameters?
+		\begin{itemize}
+			\item{Friction coefficients}
+			\item{Mass}
+			\item{Inertia}
+		\end{itemize}
 	\vspace{0.5cm}
-	
-	Why?
-	
-	\vspace{0.5cm}
-	
-	\begin{columns}
-		\column{.1\textwidth}
-		\column{.3\textwidth}
-			\centering
-			\fbox{\parbox{\textwidth}{Accurate and realistic parameters}}
-		\column{.2\textwidth}
-			\centering
-			$\Rightarrow$
-		\column{.3\textwidth}
-			\fbox{\parbox{\textwidth}{Better prediction and planning of motion}}
-		 \column{.1\textwidth}
-	\end{columns}
+	\onslide<2>
+		Why?
+		\begin{columns}
+			\column{.4\textwidth}
+				\centering
+				\begin{tcolorbox}[width=\textwidth,colback={green}]
+					Accurate and realistic parameters
+				\end{tcolorbox}
+			\column{.2\textwidth}
+				\centering
+				\Huge{$\Rightarrow$}
+			\column{.4\textwidth}
+				\begin{tcolorbox}[width=\textwidth,colback={green}]
+					Better prediction and planning of motion
+				\end{tcolorbox}
+		\end{columns}
 \end{frame}
-
-

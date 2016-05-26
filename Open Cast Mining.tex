@@ -5,6 +5,8 @@
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{blindtext}
 
 \usetheme[headline=section, footlineleft=empty, footlinecenter=empty, footlineright=frames]{TUMCD}
 \usefonttheme{professionalfonts}
@@ -64,8 +66,11 @@
 	\frametitle{Results}
 
 	\begin{columns}
+		\onslide<1->
 		\column{.5\linewidth}
-			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_results}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_results}
+		
+		\onslide<2>
 		\column{.5\linewidth}
 			\includegraphics[width=\linewidth]{img/Model_4}
 	\end{columns}

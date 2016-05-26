@@ -2,28 +2,41 @@
 
 \begin{frame}[c]
 \frametitle{Parameters}
+\onslide<1->
 Examples:
 \begin{itemize}
 	\item{Friction coefficients $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, $\mu_{P_2}$}
-	\item{masses $M_1$, $M_2$}
-	\item{inertia $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$}
+	\item{Masses $M_1$, $M_2$}
+	\item{Inertia $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$}
 \end{itemize}
 \vspace{0.5cm}
+
+\onslide<2>
 Why do we need parameter optimization?
 \begin{itemize}
-	\item{hard to measure}
-	\item{may change over time}
+	\item{Hard to measure}
+	\item{May change over time}
 \end{itemize}
 \end{frame}
 
 \begin{frame}[c]
-\frametitle{Blackbox Model}
-\begin{itemize}
-	\item{contains a realistic model from Siemens}
-	\item{confidential information}
-\end{itemize}
-\vspace{0.5cm}
-tba
+	\frametitle{Blackbox Model}
+	
+	\onslide<1->
+	\begin{itemize}
+		\item{Contains a realistic model from Siemens}
+		\item{Confidential information}
+	\end{itemize}
+
+	\vspace{0.5cm}
+	
+	\centering
+	\includegraphics<1>[width=.5\linewidth]{img/Model_0}
+	\includegraphics<2>[width=.5\linewidth]{img/Model_1}
+	\includegraphics<3>[width=.5\linewidth]{img/Model_2}
+	\includegraphics<4>[width=.5\linewidth]{img/Model_3}
+	\includegraphics<5>[width=.5\linewidth]{img/Model_4}
+
 %\begin{columns}[t]
 	%\column{.5\textwidth}
 		%\textbf{Input}
@@ -42,9 +55,9 @@ tba
 \begin{frame}
 \frametitle{Parameter Optimization}
 \begin{itemize}
-	\item{black box $\Rightarrow$ derivative-free optimization}
+	\item{Black box $\Rightarrow$ derivative-free optimization}
 	\vspace{0.5cm}
-	\item{need own model for testing}
+	\item{Need own model for testing}
 \end{itemize}
 \end{frame}
 

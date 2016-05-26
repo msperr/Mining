@@ -2,7 +2,7 @@
 
 \begin{frame}
 	\frametitle{Lagrange Formalism}
-	
+	\onslide<1->
 	Method to describe dynamics of an accelerated system\\
 	\begin{small}
 	\begin{tabular}{ll}
@@ -15,6 +15,8 @@
 		Q & generalized forces\\ \\
 	\end{tabular}
 	\end{small}
+	
+	\onslide<2>
 	\begin{align*}
 	&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
 	\frac{\partial T}{\partial q_i} +
@@ -34,9 +36,8 @@
 	\begin{columns}
 		\column{.6\linewidth}
 			\centering
-			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
-		\column{.1\linewidth}
-		\column{.3\linewidth}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+		\column{.4\linewidth}
 	\end{columns}
 	
 \end{frame}
@@ -53,9 +54,8 @@
 	\begin{columns}
 		\column{.6\linewidth}
 			\centering
-			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
-		\column{.1\linewidth}
-		\column{.3\linewidth}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+		\column{.4\linewidth}
 			coordinate system
 	\end{columns}
 	
@@ -71,9 +71,8 @@
 	\begin{columns}
 		\column{.6\linewidth}
 			\centering
-			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_dof2}
-		\column{.1\linewidth}
-		\column{.3\linewidth}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_dof2}
+		\column{.4\linewidth}
 			degrees of freedom
 			\begin{itemize}
 				\item{length $s$}
@@ -93,9 +92,8 @@
 	\begin{columns}
 		\column{.6\linewidth}
 			\centering
-			\includegraphics[trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
-		\column{.1\linewidth}
-		\column{.3\linewidth}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+		\column{.4\linewidth}
 			movable centers of gravity of
 			\begin{itemize}
 				\item{shovel $M_1$}
@@ -155,42 +153,76 @@
 	%\end{align*}
 %\end{frame}
 
-\begin{frame}
-	\frametitle{Involved Forces}
-	\begin{figure}[bth]
-	  \begin{center}
-	    %left, bottom, right, top
-	    \includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
-	    width=\linewidth]{img/Excavator_Only1}
-	  \end{center}
-	\end{figure}
+%\begin{frame}
+	%\frametitle{Involved Forces}
+	%\begin{figure}[bth]
+	  %\begin{center}
+	    %%left, bottom, right, top
+	    %\includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
+	    %width=\linewidth]{img/Excavator_Only1}
+	  %\end{center}
+	%\end{figure}
+%\end{frame}
 
+\begin{frame}
+	\frametitle{Kinetic Energy}
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+		\column{.4\linewidth}
+			\begin{itemize}
+				\item{movement of mass}
+				\item{rotation of cable reel}
+			\end{itemize}
+	\end{columns}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Involved Forces}
-	
-	\begin{figure}[bth]
-	  \begin{center}
-	    %left, bottom, right, top
-	    \includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
-	    width=\linewidth]{img/Excavator_Only2}
-	  \end{center}
-	\end{figure}
+%\begin{frame}
+	%\frametitle{Involved Forces}
+	%\begin{figure}[bth]
+	  %\begin{center}
+	    %%left, bottom, right, top
+	    %\includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
+	    %width=\linewidth]{img/Excavator_Only2}
+	  %\end{center}
+	%\end{figure}
+%\end{frame}
 
+\begin{frame}
+	\frametitle{Potential Energy}
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+		\column{.4\linewidth}
+			gravitational potential energy
+	\end{columns}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Involved Forces}
-	
-	\begin{figure}[bth]
-	  \begin{center}
-	    %left, bottom, right, top
-	    \includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
-	    width=\linewidth]{img/Excavator_Only3}
-	  \end{center}
-	\end{figure}
+%\begin{frame}
+	%\frametitle{Involved Forces}
+	%\begin{figure}[bth]
+	  %\begin{center}
+	    %%left, bottom, right, top
+	    %\includegraphics[trim=22cm 5cm 2cm 24cm, clip=true, 
+	    %width=\linewidth]{img/Excavator_Only3}
+	  %\end{center}
+	%\end{figure}
+%\end{frame}
 
+\begin{frame}
+	\frametitle{Generalized Forces}
+	\begin{columns}
+		\column{.6\linewidth}
+			\centering
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
+		\column{.4\linewidth}
+			\begin{itemize}
+				\item{torque on cable reel}
+				\item{friction of cable reel}
+			\end{itemize}
+	\end{columns}
 \end{frame}
 
 %\begin{frame}
