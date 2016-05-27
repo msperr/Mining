@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  26 MAY 2016 21:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  27 MAY 2016 10:05
 entering extended mode
 **Physical_Model.tex
 ("C:\Users\Martin\Documents\Studium\Case Studies\Midterm Presentation\Open Cast Mining\tex\Physical_Model.tex"
@@ -89,23 +89,19 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.5 	\onslide
+             <1->
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
-[][]
- []
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 	M
-      ethod to describe dynamics of an accelerated system\\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+Missing character: There is no < in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no > in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -248,6 +244,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -294,20 +291,49 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--18
+[][]
+ []
+
+! Undefined control sequence.
+l.19 	\onslide
+              <2>
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 	\onslide<
+               2>
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no < in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no > in font nullfont!
+
 ! LaTeX Error: Environment align* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 	\begin{align*}
+l.20 	\begin{align*}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.19 	&
+l.21 	&
        \frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -320,7 +346,7 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.19 	&\frac{d}{dt}
+l.21 	&\frac{d}{dt}
                    \left(\frac{\partial T}{\partial \dot{q}_i}\right) -
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -328,7 +354,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \frac #1#2->{\begingroup #1\endgroup \over #2}
                                               
-l.19 	&\frac{d}{dt}
+l.21 	&\frac{d}{dt}
                    \left(\frac{\partial T}{\partial \dot{q}_i}\right) -
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -339,7 +365,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.23 	&
+l.25 	&
         Q = \left(\frac{\partial r}{\partial q}\right)^T F\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -355,7 +381,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 	\end{align*}
+l.26 	\end{align*}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -364,7 +390,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.24 	\end{align*}
+l.26 	\end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -375,7 +401,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.24 	\end{align*}
+l.26 	\end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -384,12 +410,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--25
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--27
 []
  []
 
 
-Overfull \hbox (127.52144pt too wide) in paragraph at lines 6--25
+Overfull \hbox (127.52144pt too wide) in paragraph at lines 19--27
 []$ 
  []
 
@@ -400,7 +426,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 	\frametitle
+l.31 	\frametitle
                  {Physical Model of Excavator}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -408,7 +434,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.29 	\frametitle
+l.31 	\frametitle
                  {Physical Model of Excavator}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -441,7 +467,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 29--30
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--32
 [][]
  []
 
@@ -452,14 +478,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 	\begin{columns}
+l.36 	\begin{columns}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.35 		\column
+l.37 		\column
               {.6\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -474,7 +500,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 		\column{.
+l.37 		\column{.
                 6\linewidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -484,7 +510,7 @@ Missing character: There is no 6 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.35 		\column{.6\linewidth}
+l.37 		\column{.6\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -493,7 +519,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.35 		\column{.6\linewidth}
+l.37 		\column{.6\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -503,8 +529,8 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.37 			\includegraphics
-                        [trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidt...
+l.39 			\includegraphics
+                        [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -517,15 +543,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
@@ -552,7 +578,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.37 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.39 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_Only}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -561,7 +587,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.37 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.39 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_Only}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -587,13 +613,13 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.37 ...lip=true, width=\linewidth]{img/Excavator_
+l.39 ...lip=true, width=\linewidth]{img/Excavator_
                                                   Only}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.37 ...rue, width=\linewidth]{img/Excavator_Only}
+l.39 ...rue, width=\linewidth]{img/Excavator_Only}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -602,8 +628,8 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.38 		\column
-              {.1\linewidth}
+l.40 		\column
+              {.4\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -613,7 +639,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.38 		\column{.1\linewidth}
+l.40 		\column{.4\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -622,37 +648,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.38 		\column{.1\linewidth}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Undefined control sequence.
-l.39 		\column
-              {.3\linewidth}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.39 		\column{.3\linewidth}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.39 		\column{.3\linewidth}
+l.40 		\column{.4\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -662,13 +658,13 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-! LaTeX Error: \begin{frame} on input line 28 ended by \end{columns}.
+! LaTeX Error: \begin{frame} on input line 30 ended by \end{columns}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 	\end{columns}
+l.41 	\end{columns}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -677,7 +673,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.40 	\end{columns}
+l.41 	\end{columns}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -688,7 +684,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.40 	\end{columns}
+l.41 	\end{columns}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -697,13 +693,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 35--41
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--42
 []
  []
 
 
-Overfull \hbox (36.79788pt too wide) in paragraph at lines 35--41
-[]\OML/cmm/m/it/10 nly[][]$ 
+Overfull \hbox (29.02008pt too wide) in paragraph at lines 37--42
+[]\OML/cmm/m/it/10 nly[]$ 
  []
 
 
@@ -713,7 +709,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45 	\frametitle
+l.46 	\frametitle
                  {Physical Model of Excavator}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -721,7 +717,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.45 	\frametitle
+l.46 	\frametitle
                  {Physical Model of Excavator}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -754,7 +750,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
+Overfull \hbox (20.0pt too wide) in paragraph at lines 46--47
 [][]
  []
 
@@ -765,14 +761,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 	\begin{columns}
+l.54 	\begin{columns}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.54 		\column
+l.55 		\column
               {.6\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -787,7 +783,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 		\column{.
+l.55 		\column{.
                 6\linewidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -797,7 +793,7 @@ Missing character: There is no 6 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.54 		\column{.6\linewidth}
+l.55 		\column{.6\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -806,7 +802,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.54 		\column{.6\linewidth}
+l.55 		\column{.6\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -816,8 +812,8 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.56 			\includegraphics
-                        [trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidt...
+l.57 			\includegraphics
+                        [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -830,15 +826,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
@@ -865,7 +861,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.56 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.57 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_coordinates2}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -874,7 +870,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.56 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.57 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_coordinates2}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -900,13 +896,13 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.56 ...lip=true, width=\linewidth]{img/Excavator_
+l.57 ...lip=true, width=\linewidth]{img/Excavator_
                                                   coordinates2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.56 ...th=\linewidth]{img/Excavator_coordinates2}
+l.57 ...th=\linewidth]{img/Excavator_coordinates2}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -915,38 +911,8 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.57 		\column
-              {.1\linewidth}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.57 		\column{.1\linewidth}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.57 		\column{.1\linewidth}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Undefined control sequence.
 l.58 		\column
-              {.3\linewidth}
+              {.4\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -956,7 +922,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.58 		\column{.3\linewidth}
+l.58 		\column{.4\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -965,7 +931,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.58 		\column{.3\linewidth}
+l.58 		\column{.4\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -975,7 +941,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-! LaTeX Error: \begin{frame} on input line 44 ended by \end{columns}.
+! LaTeX Error: \begin{frame} on input line 45 ended by \end{columns}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1010,13 +976,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 54--61
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--61
 []
  []
 
 
-Overfull \hbox (150.70741pt too wide) in paragraph at lines 54--61
-[]\OML/cmm/m/it/10 oordinates\OT1/cmr/m/n/10 2[][]\OML/cmm/m/it/10 coordinatesystem$ 
+Overfull \hbox (142.92961pt too wide) in paragraph at lines 55--61
+[]\OML/cmm/m/it/10 oordinates\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 coordinatesystem$ 
  []
 
 
@@ -1130,7 +1096,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
 l.74 			\includegraphics
-                        [trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidt...
+                        [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1143,15 +1109,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
@@ -1178,7 +1144,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.74 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.74 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_dof2}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1187,7 +1153,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.74 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.74 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_dof2}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1229,7 +1195,7 @@ deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
 l.75 		\column
-              {.1\linewidth}
+              {.4\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1239,7 +1205,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.75 		\column{.1\linewidth}
+l.75 		\column{.4\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1248,37 +1214,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.75 		\column{.1\linewidth}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Undefined control sequence.
-l.76 		\column
-              {.3\linewidth}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.76 		\column{.3\linewidth}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.76 		\column{.3\linewidth}
+l.75 		\column{.4\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1290,7 +1226,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.78 			\begin{itemize}
+l.77 			\begin{itemize}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1298,7 +1234,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.78 			\begin{itemize}
+l.77 			\begin{itemize}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1307,13 +1243,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--78
+Overfull \hbox (20.0pt too wide) in paragraph at lines 72--77
  [] 
  []
 
 
-Overfull \hbox (119.54285pt too wide) in paragraph at lines 72--78
- []\OML/cmm/m/it/10 of\OT1/cmr/m/n/10 2[][]\OML/cmm/m/it/10 degreesoffreedom$ 
+Overfull \hbox (111.76505pt too wide) in paragraph at lines 72--77
+ []\OML/cmm/m/it/10 of\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 degreesoffreedom$ 
  []
 
 
@@ -1323,7 +1259,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 				\item{
+l.78 				\item{
                length $s$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1335,7 +1271,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 
-Overfull \hbox (4.6875pt too wide) in paragraph at lines 79--80
+Overfull \hbox (4.6875pt too wide) in paragraph at lines 78--79
 \OML/cmm/m/it/10 s$ 
  []
 
@@ -1346,7 +1282,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 				\item{
+l.79 				\item{
                tilt angle $\theta$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1361,7 +1297,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (4.97223pt too wide) in paragraph at lines 80--81
+Overfull \hbox (4.97223pt too wide) in paragraph at lines 79--80
 \OML/cmm/m/it/10 $ 
  []
 
@@ -1372,7 +1308,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 			\end{itemize}
+l.80 			\end{itemize}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1381,7 +1317,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.81 			\end{itemize}
+l.80 			\end{itemize}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1396,7 +1332,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 	\end{columns}
+l.81 	\end{columns}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1409,7 +1345,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \end{frame}
+l.85 \end{frame}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1418,14 +1354,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.86 \end{frame}
+l.85 \end{frame}
                 
 Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.89 	\frametitle
+l.88 	\frametitle
                  {Physical Model of Excavator}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1458,7 +1394,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 89--90
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
 [][]
  []
 
@@ -1469,14 +1405,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 	\begin{columns}
+l.92 	\begin{columns}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.94 		\column
+l.93 		\column
               {.6\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1489,7 +1425,7 @@ Missing character: There is no 6 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.94 		\column{.6\linewidth}
+l.93 		\column{.6\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1498,7 +1434,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.94 		\column{.6\linewidth}
+l.93 		\column{.6\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1508,8 +1444,8 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.96 			\includegraphics
-                        [trim=25cm 5cm 35cm 23cm, clip=true, width=\linewidt...
+l.95 			\includegraphics
+                        [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1522,15 +1458,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
@@ -1557,7 +1493,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.96 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.95 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_mass2}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1566,7 +1502,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.96 ...cm 35cm 23cm, clip=true, width=\linewidth]
+l.95 ...cm 30cm 23cm, clip=true, width=\linewidth]
                                                   {img/Excavator_mass2}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1592,13 +1528,13 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.96 ...lip=true, width=\linewidth]{img/Excavator_
+l.95 ...lip=true, width=\linewidth]{img/Excavator_
                                                   mass2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.96 ...ue, width=\linewidth]{img/Excavator_mass2}
+l.95 ...ue, width=\linewidth]{img/Excavator_mass2}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1607,8 +1543,8 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.97 		\column
-              {.1\linewidth}
+l.96 		\column
+              {.4\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1618,7 +1554,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.97 		\column{.1\linewidth}
+l.96 		\column{.4\linewidth}
                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1627,37 +1563,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.97 		\column{.1\linewidth}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Undefined control sequence.
-l.98 		\column
-              {.3\linewidth}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.98 		\column{.3\linewidth}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.98 		\column{.3\linewidth}
+l.96 		\column{.4\linewidth}
                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1669,16 +1575,16 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.100 			\begin{itemize}
-                        
+l.98 			\begin{itemize}
+                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.100 			\begin{itemize}
-                        
+l.98 			\begin{itemize}
+                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1686,13 +1592,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 94--100
+Overfull \hbox (20.0pt too wide) in paragraph at lines 93--98
  [] 
  []
 
 
-Overfull \hbox (166.15735pt too wide) in paragraph at lines 94--100
- []\OML/cmm/m/it/10 ass\OT1/cmr/m/n/10 2[][]\OML/cmm/m/it/10 movablecentersofgravityof$ 
+Overfull \hbox (158.37955pt too wide) in paragraph at lines 93--98
+ []\OML/cmm/m/it/10 ass\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 movablecentersofgravityof$ 
  []
 
 
@@ -1702,8 +1608,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 				\item{
-                shovel $M_1$}
+l.99 				\item{
+               shovel $M_1$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1714,7 +1620,7 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 
-Overfull \hbox (14.18753pt too wide) in paragraph at lines 101--102
+Overfull \hbox (14.18753pt too wide) in paragraph at lines 99--100
 \OML/cmm/m/it/10 M[]$ 
  []
 
@@ -1725,7 +1631,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 				\item{
+l.100 				\item{
                 arm $M_2$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1734,18 +1640,18 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (14.18753pt too wide) in paragraph at lines 102--103
+Overfull \hbox (14.18753pt too wide) in paragraph at lines 100--101
 \OML/cmm/m/it/10 M[]$ 
  []
 
 
-! LaTeX Error: \begin{frame} on input line 88 ended by \end{itemize}.
+! LaTeX Error: \begin{frame} on input line 87 ended by \end{itemize}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 			\end{itemize}
+l.101 			\end{itemize}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1754,7 +1660,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.103 			\end{itemize}
+l.101 			\end{itemize}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1763,13 +1669,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{frame} on input line 88 ended by \end{columns}.
+! LaTeX Error: \begin{frame} on input line 87 ended by \end{columns}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 	\end{columns}
+l.102 	\end{columns}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1782,7 +1688,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 \end{frame}
+l.104 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1791,14 +1697,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.106 \end{frame}
+l.104 \end{frame}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.109 	\frametitle
+l.107 	\frametitle
                   {Physical Model of Excavator}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1831,7 +1737,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 109--110
+Overfull \hbox (20.0pt too wide) in paragraph at lines 107--108
 [][]
  []
 
@@ -1858,7 +1764,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 115--117
+Overfull \hbox (20.0pt too wide) in paragraph at lines 113--115
 []
  []
 
@@ -1940,54 +1846,75 @@ Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.159 	\frametitle
-                  {Involved Forces}
+l.168 	\frametitle
+                  {Kinetic Energy}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no I in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no F in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
 
-! LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment columns undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 	\begin{figure}
-                     [bth]
+l.169 	\begin{columns}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.170 		\column
+               {.6\linewidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 159--161
-[][]
- []
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.170 		\column{.6\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.170 		\column{.6\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.163 	    \includegraphics
-                           [trim=22cm 5cm 2cm 24cm, clip=true,
+l.172 			\includegraphics
+                         [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewid...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2000,18 +1927,19 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -2034,8 +1962,8 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.164 	    width=\linewidth]
-                            {img/Excavator_Only1}
+l.172 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -2043,8 +1971,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.164 	    width=\linewidth]
-                            {img/Excavator_Only1}
+l.172 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -2069,152 +1997,267 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.164 	    width=\linewidth]{img/Excavator_
-                                           Only1}
+l.172 ...ip=true, width=\linewidth]{img/Excavator_
+                                                  Only}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.164 	    width=\linewidth]{img/Excavator_Only1}
-                                                 
+l.172 ...ue, width=\linewidth]{img/Excavator_Only}
+                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-! LaTeX Error: Command \end{center} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.165 	  \end{center}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.165 	  \end{center}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: \begin{frame} on input line 158 ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 	\end{figure}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (26.2423pt too wide) in paragraph at lines 163--167
-[]\OML/cmm/m/it/10 nly\OT1/cmr/m/n/10 1$
- []
-
 ! Undefined control sequence.
-<argument> \frametitle 
-                       
-l.171 	\frametitle
-                  {Involved Forces}
+l.173 		\column
+               {.4\linewidth}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no I in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no F in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.173 		\column{.4\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 171--172
-[][]
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.173 		\column{.4\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.174 			\begin{itemize}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.174 			\begin{itemize}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 168--174
+ [][] 
  []
 
 
-! LaTeX Error: Environment figure undefined.
+Overfull \hbox (29.02008pt too wide) in paragraph at lines 168--174
+ []\OML/cmm/m/it/10 nly[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 	\begin{figure}
-                     [bth]
+l.175 				\item{
+                movement of mass}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 				\item{
+                rotation of cable reel}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+
+! LaTeX Error: \begin{frame} on input line 167 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 			\end{itemize}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no ] in font nullfont!
+! Missing } inserted.
+<inserted text> 
+                }
+l.177 			\end{itemize}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 173--174
-[] 
- []
+
+! LaTeX Error: \begin{frame} on input line 167 ended by \end{columns}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 	\end{columns}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{frame}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.179 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
-l.176 	    \includegraphics
-                           [trim=22cm 5cm 2cm 24cm, clip=true,
+<argument> \frametitle 
+                       
+l.193 	\frametitle
+                  {Potential Energy}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
+
+! LaTeX Error: Environment columns undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 	\begin{columns}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.195 		\column
+               {.6\linewidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.195 		\column{.6\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.195 		\column{.6\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.197 			\includegraphics
+                         [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewid...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2227,18 +2270,19 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -2261,8 +2305,8 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.177 	    width=\linewidth]
-                            {img/Excavator_Only2}
+l.197 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -2270,8 +2314,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.177 	    width=\linewidth]
-                            {img/Excavator_Only2}
+l.197 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -2296,61 +2340,68 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.177 	    width=\linewidth]{img/Excavator_
-                                           Only2}
+l.197 ...ip=true, width=\linewidth]{img/Excavator_
+                                                  Only}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.177 	    width=\linewidth]{img/Excavator_Only2}
-                                                 
+l.197 ...ue, width=\linewidth]{img/Excavator_Only}
+                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+! Undefined control sequence.
+l.198 		\column
+               {.4\linewidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: Command \end{center} invalid in math mode.
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.198 		\column{.4\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.198 		\column{.4\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: \begin{frame} on input line 192 ended by \end{columns}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.200 	\end{columns}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.178 	  \end{center}
-                     
+l.200 	\end{columns}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2360,8 +2411,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.178 	  \end{center}
-                     
+l.200 	\end{columns}
+                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2369,40 +2420,35 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{frame} on input line 170 ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 	\end{figure}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 193--202
+[][]
+ []
 
 
-Overfull \hbox (26.2423pt too wide) in paragraph at lines 176--180
-[]\OML/cmm/m/it/10 nly\OT1/cmr/m/n/10 2$
+Overfull \hbox (158.30945pt too wide) in paragraph at lines 193--202
+[]\OML/cmm/m/it/10 nly[]gravitationalpotentialenergy$
  []
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.184 	\frametitle
-                  {Involved Forces}
+l.215 	\frametitle
+                  {Generalized Forces}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no I in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
-Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no F in font nullfont!
@@ -2412,36 +2458,53 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 184--185
-[][]
- []
-
-
-! LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment columns undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 	\begin{figure}
-                     [bth]
+l.216 	\begin{columns}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.217 		\column
+               {.6\linewidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 186--187
-[] 
- []
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.217 		\column{.6\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.217 		\column{.6\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.189 	    \includegraphics
-                           [trim=22cm 5cm 2cm 24cm, clip=true,
+l.219 			\includegraphics
+                         [trim=30cm 5cm 30cm 23cm, clip=true, width=\linewid...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2454,18 +2517,19 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no 2 in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -2488,8 +2552,8 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.190 	    width=\linewidth]
-                            {img/Excavator_Only3}
+l.219 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -2497,8 +2561,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.190 	    width=\linewidth]
-                            {img/Excavator_Only3}
+l.219 ...m 30cm 23cm, clip=true, width=\linewidth]
+                                                  {img/Excavator_Only}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -2523,72 +2587,63 @@ Missing character: There is no r in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.190 	    width=\linewidth]{img/Excavator_
-                                           Only3}
+l.219 ...ip=true, width=\linewidth]{img/Excavator_
+                                                  Only}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.190 	    width=\linewidth]{img/Excavator_Only3}
-                                                 
+l.219 ...ue, width=\linewidth]{img/Excavator_Only}
+                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+! Undefined control sequence.
+l.220 		\column
+               {.4\linewidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: Command \end{center} invalid in math mode.
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.220 		\column{.4\linewidth}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 	  \end{center}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.220 		\column{.4\linewidth}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.191 	  \end{center}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+l.221 			\begin{itemize}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-! Missing } inserted.
+! Missing \endgroup inserted.
 <inserted text> 
-                }
-l.191 	  \end{center}
-                     
+                \endgroup 
+l.221 			\begin{itemize}
+                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2596,27 +2651,136 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{frame} on input line 183 ended by \end{figure}.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 215--221
+ [][] 
+ []
+
+
+Overfull \hbox (29.02008pt too wide) in paragraph at lines 215--221
+ []\OML/cmm/m/it/10 nly[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 	\end{figure}
-                   
+l.222 				\item{
+                torque on cable reel}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 				\item{
+                friction of cable reel}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+
+! LaTeX Error: \begin{frame} on input line 214 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 			\end{itemize}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.224 			\end{itemize}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{frame} on input line 214 ended by \end{columns}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 	\end{columns}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (26.2423pt too wide) in paragraph at lines 189--193
-[]\OML/cmm/m/it/10 nly\OT1/cmr/m/n/10 3$
- []
+! LaTeX Error: \begin{document} ended by \end{frame}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.226 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.236 	\frametitle
+l.268 	\frametitle
                   {Lagrange Formalism}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2642,7 +2806,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 236--237
+Overfull \hbox (20.0pt too wide) in paragraph at lines 268--269
 [][]
  []
 
@@ -2653,14 +2817,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 	\begin{align*}
+l.270 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.239 	  &
+l.271 	  &
           \frac{d}{dt}\left(\frac{\partial T}{\partial \dot{s}}\right) -
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2673,7 +2837,7 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.239 	  &\frac{d}{dt}
+l.271 	  &\frac{d}{dt}
                       \left(\frac{\partial T}{\partial \dot{s}}\right) -
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2681,7 +2845,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \frac #1#2->{\begingroup #1\endgroup \over #2}
                                               
-l.239 	  &\frac{d}{dt}
+l.271 	  &\frac{d}{dt}
                       \left(\frac{\partial T}{\partial \dot{s}}\right) -
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2692,7 +2856,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.243 	  &
+l.275 	  &
           {}\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2704,7 +2868,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.244 	  &
+l.276 	  &
           \frac{d}{dt}\left(\frac{\partial T}{\partial \dot{\theta}}\right) -
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2714,13 +2878,13 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{frame} on input line 235 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 267 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 	\end{align*}
+l.280 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2729,7 +2893,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.248 	\end{align*}
+l.280 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2740,7 +2904,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.248 	\end{align*}
+l.280 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2749,7 +2913,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (181.74335pt too wide) in paragraph at lines 239--250
+Overfull \hbox (181.74335pt too wide) in paragraph at lines 271--282
 []$[]$
  []
 
@@ -2757,7 +2921,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.252 	\frametitle
+l.284 	\frametitle
                   {Resulting ODE}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2778,7 +2942,7 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 251--253
+Overfull \hbox (20.0pt too wide) in paragraph at lines 283--285
 [][]
  []
 
@@ -2825,14 +2989,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 	\begin{align*}
+l.287 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.256 	  &
+l.288 	  &
           A(x,p)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2850,7 +3014,7 @@ Missing character: There is no ) in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.258 	    \ddot
+l.290 	    \ddot
                 {s} \\ \ddot{\theta} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2858,7 +3022,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.258 	    \ddot
+l.290 	    \ddot
                 {s} \\ \ddot{\theta} \\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2868,7 +3032,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.258 	    \ddot
+l.290 	    \ddot
                 {s} \\ \ddot{\theta} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2879,7 +3043,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.259 	  \end{pmatrix}
+l.291 	  \end{pmatrix}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2897,30 +3061,30 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-! LaTeX Error: \begin{frame} on input line 251 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 283 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261 	\end{align*}
+l.293 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 254--262
+Overfull \hbox (20.0pt too wide) in paragraph at lines 286--294
 []
  []
 
 
-Overfull \hbox (17.46518pt too wide) in paragraph at lines 254--262
+Overfull \hbox (17.46518pt too wide) in paragraph at lines 286--294
 [] \OML/cmm/m/it/10 s[] 
  []
 
 
-Overfull \hbox (4.97223pt too wide) in paragraph at lines 254--262
+Overfull \hbox (4.97223pt too wide) in paragraph at lines 286--294
 [][] 
  []
 
@@ -2960,14 +3124,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.264 	\begin{align*}
+l.296 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.265 	  &
+l.297 	  &
           \frac{d}{dt}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2980,7 +3144,7 @@ Missing character: There is no d in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.265 	  &\frac{d}{dt}
+l.297 	  &\frac{d}{dt}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2988,7 +3152,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \frac #1#2->{\begingroup #1\endgroup \over #2}
                                               
-l.265 	  &\frac{d}{dt}
+l.297 	  &\frac{d}{dt}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2999,7 +3163,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.271 	    \dot
+l.303 	    \dot
                {s} \\ \dot{\theta} \\ A^{-1}(x,p)b(x,u,p) \\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3009,7 +3173,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 	    \dot
+l.303 	    \dot
                {s} \\ \dot{\theta} \\ A^{-1}(x,p)b(x,u,p) \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3018,13 +3182,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{frame} on input line 251 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 283 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 	\end{align*}
+l.306 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3033,7 +3197,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.274 	\end{align*}
+l.306 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3044,7 +3208,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.274 	\end{align*}
+l.306 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3053,12 +3217,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 263--275
+Overfull \hbox (20.0pt too wide) in paragraph at lines 295--307
 []
  []
 
 
-Overfull \hbox (156.77573pt too wide) in paragraph at lines 263--275
+Overfull \hbox (156.77573pt too wide) in paragraph at lines 295--307
 []$ 
  []
 
@@ -3085,14 +3249,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (89.13293pt too wide) in paragraph at lines 278--285
+Overfull \hbox (89.13293pt too wide) in paragraph at lines 310--317
 [][]
  []
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.287 	\frametitle
+l.319 	\frametitle
                   {Discretization of the ODE}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3123,7 +3287,7 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 287--288
+Overfull \hbox (20.0pt too wide) in paragraph at lines 319--320
 [][]
  []
 
@@ -3157,14 +3321,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 	\begin{align*}
+l.327 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.296 	  &
+l.328 	  &
           [0,T] \rightarrow \left\{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3181,19 +3345,19 @@ Missing character: There is no ] in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.296 	  &[0,T] \rightarrow
+l.328 	  &[0,T] \rightarrow
                             \left\{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{frame} on input line 286 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 318 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298 	\end{align*}
+l.330 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3202,7 +3366,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.298 	\end{align*}
+l.330 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3211,17 +3375,17 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 294--299
+Overfull \hbox (20.0pt too wide) in paragraph at lines 326--331
 []
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 294--299
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 326--331
 \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (130.52174pt too wide) in paragraph at lines 294--299
+Overfull \hbox (130.52174pt too wide) in paragraph at lines 326--331
 [] [] 
  []
 
@@ -3258,14 +3422,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.301 	\begin{align*}
+l.333 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.302 	  &
+l.334 	  &
           x_n = x(t_n) \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3278,7 +3442,7 @@ Missing character: There is no x in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.302 	  &x_
+l.334 	  &x_
             n = x(t_n) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3286,7 +3450,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.303 	  &
+l.335 	  &
           u_n = u(t_n) \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3296,13 +3460,13 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{frame} on input line 286 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 318 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.304 	\end{align*}
+l.336 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3311,7 +3475,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.304 	\end{align*}
+l.336 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3320,32 +3484,32 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 300--305
+Overfull \hbox (20.0pt too wide) in paragraph at lines 332--337
 []
  []
 
 
-Overfull \hbox (15.99884pt too wide) in paragraph at lines 300--305
+Overfull \hbox (15.99884pt too wide) in paragraph at lines 332--337
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.54752pt too wide) in paragraph at lines 300--305
+Overfull \hbox (22.54752pt too wide) in paragraph at lines 332--337
 \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )[] 
  []
 
 
-Overfull \hbox (21.72342pt too wide) in paragraph at lines 300--305
+Overfull \hbox (21.72342pt too wide) in paragraph at lines 332--337
 \OML/cmm/m/it/10 u[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.55682pt too wide) in paragraph at lines 300--305
+Overfull \hbox (22.55682pt too wide) in paragraph at lines 332--337
 \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )[] 
  []
 
 ! Undefined control sequence.
-l.310 	\frametitle
+l.342 	\frametitle
                   {Discretization of the ODE}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3376,7 +3540,7 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 309--311
+Overfull \hbox (20.0pt too wide) in paragraph at lines 341--343
 [][]
  []
 
@@ -3417,14 +3581,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 	\begin{align*}
+l.346 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.315 	  &
+l.347 	  &
           x_{n+1} \approx \tilde{x}_{n+1} = x_n + h_n f(x_n,u_n,p) \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3437,19 +3601,19 @@ Missing character: There is no x in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.315 	  &x_
+l.347 	  &x_
             {n+1} \approx \tilde{x}_{n+1} = x_n + h_n f(x_n,u_n,p) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{frame} on input line 308 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 340 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 	\end{align*}
+l.348 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3458,7 +3622,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.316 	\end{align*}
+l.348 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3467,42 +3631,42 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 313--317
+Overfull \hbox (20.0pt too wide) in paragraph at lines 345--349
 []
  []
 
 
-Overfull \hbox (21.76042pt too wide) in paragraph at lines 313--317
+Overfull \hbox (21.76042pt too wide) in paragraph at lines 345--349
 \OML/cmm/m/it/10 h[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (26.95729pt too wide) in paragraph at lines 313--317
+Overfull \hbox (26.95729pt too wide) in paragraph at lines 345--349
 \OML/cmm/m/it/10 t[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (9.05444pt too wide) in paragraph at lines 313--317
+Overfull \hbox (9.05444pt too wide) in paragraph at lines 345--349
 \OML/cmm/m/it/10 t[]$
  []
 
 
-Overfull \hbox (26.12389pt too wide) in paragraph at lines 313--317
+Overfull \hbox (26.12389pt too wide) in paragraph at lines 345--349
 [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (31.83916pt too wide) in paragraph at lines 313--317
+Overfull \hbox (31.83916pt too wide) in paragraph at lines 345--349
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (18.9364pt too wide) in paragraph at lines 313--317
+Overfull \hbox (18.9364pt too wide) in paragraph at lines 345--349
 \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (61.20155pt too wide) in paragraph at lines 313--317
+Overfull \hbox (61.20155pt too wide) in paragraph at lines 345--349
 \OML/cmm/m/it/10 h[]f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; u[]; p\OT1/cmr/m/n/10 )[] 
  []
 
@@ -3532,14 +3696,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 	\begin{align*}
+l.351 	\begin{align*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.320 	  &
+l.352 	  &
           0 = x_{n+1} - \tilde{x}_{n+1} \quad \forall n = 0,\ldots,m-1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3554,19 +3718,19 @@ Missing character: There is no x in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.320 	  &0 = x_
+l.352 	  &0 = x_
                 {n+1} - \tilde{x}_{n+1} \quad \forall n = 0,\ldots,m-1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{frame} on input line 308 ended by \end{align*}.
+! LaTeX Error: \begin{frame} on input line 340 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.321 	\end{align*}
+l.353 	\end{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3575,7 +3739,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.321 	\end{align*}
+l.353 	\end{align*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3584,34 +3748,34 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 318--322
+Overfull \hbox (20.0pt too wide) in paragraph at lines 350--354
 []
  []
 
 
-Overfull \hbox (23.34618pt too wide) in paragraph at lines 318--322
+Overfull \hbox (23.34618pt too wide) in paragraph at lines 350--354
 [] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (43.39708pt too wide) in paragraph at lines 318--322
+Overfull \hbox (43.39708pt too wide) in paragraph at lines 350--354
 [] \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (43.78001pt too wide) in paragraph at lines 318--322
+Overfull \hbox (43.78001pt too wide) in paragraph at lines 350--354
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; [] ; m \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 318--322
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 350--354
 \OT1/cmr/m/n/10 1$ 
  []
 
 ! Undefined control sequence.
 <argument> \frametitle 
                        
-l.327 	\frametitle
+l.359 	\frametitle
                   {Discretization of the ODE}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3642,7 +3806,7 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 327--328
+Overfull \hbox (20.0pt too wide) in paragraph at lines 359--360
 [][]
  []
 
@@ -3653,7 +3817,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.329 	\begin{figure}
+l.361 	\begin{figure}
                      [bth]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3665,12 +3829,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 329--330
+Overfull \hbox (20.0pt too wide) in paragraph at lines 361--362
 [] 
  []
 
 ! Undefined control sequence.
-l.332 	    \includegraphics
+l.364 	    \includegraphics
                            [trim=1cm 5cm 0cm 8cm, clip=true,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3716,7 +3880,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.333 	    width=\linewidth]
+l.365 	    width=\linewidth]
                             {img/multShootPlot}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3725,7 +3889,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.333 	    width=\linewidth]
+l.365 	    width=\linewidth]
                             {img/multShootPlot}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3753,13 +3917,13 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 
-! LaTeX Error: \begin{frame} on input line 326 ended by \end{figure}.
+! LaTeX Error: \begin{frame} on input line 358 ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 	\end{figure}
+l.367 	\end{figure}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
