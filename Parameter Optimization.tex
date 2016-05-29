@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
@@ -6,19 +6,22 @@
 \usepackage{amsmath,amssymb,amsthm}
 
 \setlength{\parindent}{0pt}
+\pagestyle{empty}
 
 \begin{document}
 
 \section{Parameter Optimization}
+
+After completing our own model, we focus on the second task, the identification of parameters for the excavator.
 
 \subsection{Parameters}
 
 \paragraph{Examples}
 
 \begin{itemize}
-	\item{friction coefficients in the cable reels}
-	\item{inertia of the arm and in the engine}
-	\item{mass and mass distribution of the arm}
+	\item{Friction coefficients in the engine and in the cable reels}
+	\item{Mass and mass distribution of the arm}
+	\item{Inertia of the arm and in the engine}
 \end{itemize}
 
 \paragraph{Why?} \hfill\\
@@ -29,7 +32,7 @@ Parameters can change in a long time usage, due to frequent temperature changes,
 
 \subsection{Black Box}
 
-For this purpose, we have received a real excavator model from Siemens. Since the content is valuable and complex, the model is a black box, implemented in MatLab. \\
+For this purpose, we have received a real excavator model from Siemens. Since the content is confidential and complex, the model is a black box, implemented in MatLab. \\
 
 Input:
 
@@ -41,15 +44,23 @@ Input:
 Output:
 
 \begin{itemize}
-	\item{Motion: Actual position of the excavator shovel over time}
+	\item{Motion: Position and torques of the excavator shovel over time}
 \end{itemize}
 
 For given trajectories of control and motion, we have to identify the parameters.
 
-\subsection{Optimization}
+\subsection{Parameter Optimization}
 
-Since we have no information about the black box model, we will have to use derivative-free optimization-methods. \\
+We are optimizing the parameters for the black box model and our own model.
 
-For verifying our optimization procedure, we will use the model we have developed so far. For this model, we have all information and we can apply this as a reference, e.g. for error searching.
+\begin{itemize}
+	\item{Own model: all information, including derivatives, available}
+	\item{Black box model: no information about the black box model \\
+		$\Rightarrow$ Derivative-free optimization methods}
+\end{itemize}
+
+For given trajectories of control and motion, we define penalty terms for the deviation from the desired motion \\
+
+$\Rightarrow$ minimizing penalty terms in order to achieve solutions for parameters.
 
 \end{document}
