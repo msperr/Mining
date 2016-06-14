@@ -15,6 +15,7 @@
 
 \begin{document}
 
+
 \section{Black Box Model}
 
 \begin{frame}
@@ -118,5 +119,116 @@
 		Simulated Annealing & $10^{-1}$ & $3000$ & 4 min \\
 	\end{tabular}
 \end{frame}
+
+
+
+
+\section{Developed Model}
+
+\begin{frame}
+    \frametitle{Optimization Problem}
+    \begin{align*}
+        \min_{p\in\mathbb{R}^{10}} f(p) & = & & \frac{1}{2} \| x_{\text{ref}} - x(p) \|^2 \\
+        \operatorname{s.t.} & & & p_i \geq 0 \\
+    \end{align*}
+
+    \begin{itemize}
+        \item{state $x = (s,\theta,\dot{s},\dot{\theta})^T$}
+        \item{$x_{\text{ref}}$ reference trajectory}
+        \item{$x(p)$ approximation using Runge-Kutta methods of Order 1/2/3/4}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Influence of the Parameters}
+    Using $x_{\text{ref}} = x_{\text{real}}$, the real trajectory:
+    \begin{columns}[t]
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/MassActualComp}
+        \end{figure}
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/InertiaActualComp}
+        \end{figure}
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/FrictionActualComp}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Influence of the Parameters}
+    Using $x_{\text{ref}} = x(p_{\text{real}})$, the appriximation from the real parameters:
+    \begin{columns}[t]
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/MassApproxComp}
+        \end{figure}
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/InertiaApproxComp}
+        \end{figure}
+        \column{.33\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[trim=4cm 4cm 4cm 8cm, clip=true, width=\linewidth]{img/FrictionApproxComp}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Solvers}
+    Conditions:
+    \begin{itemize}
+        \item{Supporting Points: 100}
+        \item{Runge-Kutta Order: 1}
+        \item{Reference Trajectory: $x_{\text{real}}$}
+        \item{$\frac{1}{2}\|x_{\text{real}} - x(p_\text{real})\|^2 = 9.4 \cdot 10^{-4}$}
+        \item{Optimality Tolerance: $10^{-10}$}
+    \end{itemize}
+
+     \vspace{0.5cm}
+
+     \begin{tabular}{l|ccc}
+         & iterations & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
+         \hline
+         SQP             & $177$ & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Interior Point  & $186$ & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Trust Region    & $12$  & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Active Set      & $17$  & $1.9 \cdot 10^{-2}$ & $2.6 \cdot 10^{-2}$ \\
+     \end{tabular}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Solvers}
+    Conditions:
+    \begin{itemize}
+        \item{Supporting Points: 100}
+        \item{Runge-Kutta Order: 4}
+        \item{Reference Trajectory: $x_{\text{real}}$}
+        \item{$\frac{1}{2}\|x_{\text{real}} - x(p_\text{real})\|^2 = 9.4 \cdot 10^{-5}$}
+        \item{Optimality Tolerance: $10^{-10}$}
+    \end{itemize}
+
+     \vspace{0.5cm}
+
+     \begin{tabular}{l|ccc}
+         & iterations & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
+         \hline
+         SQP             & $193$ & $8.9 \cdot 10^{-5}$ & $5.3 \cdot 10^{-6}$ \\
+         Interior Point  & $206$ & $8.9 \cdot 10^{-5}$ & $5.3 \cdot 10^{-6}$ \\
+         Trust Region    & $19$  & $8.9 \cdot 10^{-5}$ & $5.2 \cdot 10^{-6}$ \\
+         Active Set      & $17$  & $1.9 \cdot 10^{-2}$ & $1.9 \cdot 10^{-2}$ \\
+     \end{tabular}
+\end{frame}
+
+
 
 \end{document}
