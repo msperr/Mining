@@ -1,0 +1,61 @@
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+\usetheme[headline=section, footlineleft=empty, footlinecenter=empty, footlineright=frames]{TUMCD}
+\usefonttheme{professionalfonts}
+
+\lstset{frame=tb, language=Java, aboveskip=3mm, belowskip=3mm, showstringspaces=false, columns=flexible, basicstyle={\small\ttfamily}, numbers=none, numberstyle=\tiny\color{gray}, keywordstyle=\color{blue}, commentstyle=\color{dkgreen}, stringstyle=\color{mauve}, breaklines=true, breakatwhitespace=true, tabsize=3}
+
+\begin{document}
+
+\section{Black Box Model}
+
+\begin{frame}
+	\frametitle{Trajectories}
+	
+	\textbf{Input}
+	\begin{itemize}
+		\item{Joystick commands: \lstinline{cmd_hst_pt, cmd_crd_pt}}
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	
+	\textbf{Output}
+	\begin{itemize}
+		\item{Torques: \lstinline{u_hst, u_crd}}
+		\item{Positions: \lstinline{y_hst, y_crd}}
+	\end{itemize}
+
+	\vspace{0.5cm}
+
+	Currently we have:
+	\begin{itemize}
+		\item{\lstinline{n_tra} different trajectories of size \lstinline{n_sim}}
+		\item{\lstinline{n_tra = 9; n_sim = 1000}}
+		\item{each matrix of size \lstinline{(n_tra, n_sim)}}	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Objective Function}
+	Parameters that are optimized: \\
+	\lstinline{hst_inertia_engine, inertia_yy, hst_friction, crd_mass}
+	
+	\vspace{0.5cm}
+	\begin{align*}
+		\min_{p\in\mathbb{R}^4} f(p)& = &	 & \alpha_1\cdot \Vert \overline{U}_{hst} - U_{hst}\left(p\right) \Vert_{F}^2
+		+ \alpha_2\cdot \Vert \overline{U}_{crd} - U_{crd}\left(p\right) \Vert_{F}^2 \\
+		& & + & \alpha_3\cdot \Vert \overline{Y}_{hst} - Y_{hst}\left(p\right) \Vert_{F}^2
+		+ \alpha_4\cdot \Vert \overline{Y}_{crd} - Y_{crd}\left(p\right) \Vert_{F}^2 \\
+		s.t.& & & p_i \geq 0
+	\end{align*}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,70 @@
+\ProvidesPackage{beamerthemeTUMCD}
+
+%\RequirePackage{eulervm}
+\RequirePackage[scaled]{helvet}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+%\beamertemplatenavigationsymbolsempty
+
+\DeclareOptionBeamer{headline}{\PassOptionsToPackage{headline=#1}{beamerouterthemeTUMCD}}
+% Options for controlling the headline (TUM logo is always shown at the right):
+% headline=empty: do not show anything in the headline
+% headline=faculty: show a faculty logo
+% headline=facultylong: show a faculty logo along with corresponding text
+% headline=institute: show the institute logo and text (currently the same as
+% faculty, for lack of a decent institute logo - this is bound to change without
+% further notice!)
+% headline=section: show the current section title
+% headline=title: show the talk's title
+
+\DeclareOptionBeamer{footlineleft}{\PassOptionsToPackage{footlineleft=#1}{beamerouterthemeTUMCD}}
+% Options for controlling the left part of the footline
+% footlineleft=faculty: show the faculty logo
+% footlineleft=institute: show the institute logo (see headline=institute)
+% footlineleft=title: show the talk's title
+% footlineleft=date: show the current date
+% footlineleft=author: show the author
+% footlineleft=frame: show the current frame's number
+% footlineleft=frames: show the current frame's number plus the total number of frames
+% footlineleft=empty: just show a white background
+
+\DeclareOptionBeamer{footlinecenter}{\PassOptionsToPackage{footlinecenter=#1}{beamerouterthemeTUMCD}}
+% Options for controlling the center part of the footline: identical to
+% footlineleft options
+
+\DeclareOptionBeamer{footlineright}{\PassOptionsToPackage{footlineright=#1}{beamerouterthemeTUMCD}}
+% Options for controlling the right part of the footline: identical to
+% footlineleft options
+
+\DeclareOptionBeamer{fontheadfoot}{\PassOptionsToPackage{fontheadfoot=#1}{beamerfontthemeTUMCD}}
+% Options for controlling the font used in head and foot
+% fontheadfoot = empty: use normal font
+% fontheadfoot = TUMhelv: use TUM Helvetica font
+
+\ProcessOptionsBeamer
+
+\usecolortheme{TUMCD}
+\useoutertheme{TUMCD}
+\useinnertheme{TUMCD}
+\usefonttheme{TUMCD}
+
+% colors provided by TUMCD
+% for use in presentations:
+% colors are available with both a German and an
+% English name
+% gelb, yellow
+% orange
+% rot, red
+% dunkelrot, dark red
+% blau,blue
+% hellblau, light blue
+% gruen, green
+% hellgruen, light green
+
+% In addition to the above, the following colors are
+% available, but should not be used
+% in  presentations according to TUM
+% styleguide:
+% TUMblau, TUMblue
+% TUMblau1 bis TUMblau5, TUMblue1 to TUMblue5
+% TUMgrau1 is TUMgrau3, TUMgray1 to TUMgray3

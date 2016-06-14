@@ -1,0 +1,194 @@
+\usepackage{tikz}
+
+\mode<presentation>
+\setbeamertemplate{sidebar right}{}
+
+% header empty apart from TUM-Logo
+\newcommand{\headlinebox@empty}{%
+\begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{title in head} %
+    \usebeamerfont{title in head/foot}%
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows talk title and TUM-Logo%
+\newcommand{\headlinebox@title}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{title in head} %
+    \usebeamerfont{title in head/foot}%
+    \insertshorttitle%
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows current section and TUM-Logo
+\newcommand{\headlinebox@section}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{institute in head/foot}%
+    \usebeamerfont{section in head/foot}%
+    \insertsection%
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows faculty logo and TUM-Logo
+\newcommand{\headlinebox@faculty}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{institute in head/foot} %
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics[height=5.6mm]{MA_CMYK.pdf}%   
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows faculty logo, text and TUM-Logo
+\newcommand{\headlinebox@facultylong}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{institute in head/foot} %
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics[height=5.6mm]{MA_CMYK.pdf}%
+    \hspace{1.2ex}%
+    \iflanguage{ngerman}{Fakult\"at f\"ur Mathematik}{Department of Mathematics}%
+    \hfill%
+    Technische Universit\"at M\"unchen\hspace{1.2ex}%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows institute logo and TUM-Logo % for now, this is just the faculty
+% logo as we do not have a usable institute logo
+\newcommand{\headlinebox@institute}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{title in head} %
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics[height=5.6mm]{MA_CMYK.pdf}%   
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+% header shows logo specified by \logo and TUM-Logo
+\newcommand{\headlinebox@logo}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.5mm,dp=2mm,%
+    leftskip=3mm,rightskip=3mm]{institute in head/foot} %
+    \usebeamerfont{institute in head/foot}%
+    \resizebox{!}{6mm}{\insertlogo}%
+    \hfill%
+    \includegraphics[height=5.6mm]{TUMLogo_oZ_Vollfl_blau_CMYK.pdf}%
+  \end{beamercolorbox}%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bottom box that shows institute logo for now, this is just the faculty logo %
+%as we do not have a usable institute logo argument #1=placement (left, center,
+% right)%
+ \newcommand{\footlinebox@institute}[1]{%
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics*[height=3mm, viewport=10 10 30 30]{MA_CMYK.pdf}%   
+}%
+
+\newcommand{\footlinebox@faculty}[1]{%
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics*[height=3mm, viewport=10 10 30 30]{MA_CMYK.pdf}% 
+}%
+
+\newcommand{\footlinebox@facultylong}[1]{%
+    \usebeamerfont{institute in head/foot}%
+    \includegraphics*[height=3mm, viewport=10 10 30 30]{MA_CMYK.pdf}%
+    \hspace{1.2ex}%
+    \iflanguage{ngerman}{Fakult\"at f\"ur Mathematik}{Department of Mathematics}%
+}%
+
+\newcommand{\footlinebox@title}[1]{%
+	\usebeamerfont{institute in head/foot}%
+	\insertshorttitle%
+}%
+
+\newcommand{\footlinebox@date}[1]{%
+	\usebeamerfont{institute in head/foot}%
+	\insertshortdate%
+}%
+
+\newcommand{\footlinebox@author}[1]{%
+	\usebeamerfont{institute in head/foot}%
+	\insertshortauthor%
+ }%
+
+\newcommand{\footlinebox@frame}[1]{%
+	\usebeamerfont{institute in head/foot}%
+	\insertframenumber%
+ }%
+
+\newcommand{\footlinebox@frames}[1]{%
+	\usebeamerfont{institute in head/foot}%
+	\insertframenumber~/~\inserttotalframenumber%
+}%
+
+\newcommand{\footlinebox@institutename}[1]{%
+ \insertshortinstitute%
+}%
+
+
+\newcommand{\footlinebox@empty}[1]{%
+}%
+
+\setbeamertemplate{sidebar right}{}
+
+% %what to show at the top left: "faculty", "facultylong" (including fancy text), "institute", "section", "title",
+%"empty"
+\DeclareOptionBeamer{headline}[facultylong]{%
+  \setbeamertemplate{headline}{%
+    \csname headlinebox@#1\endcsname%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.2mm]{separation line}%
+    \end{beamercolorbox}%
+  }%
+}%
+% what to show at the bottom left/center/right: "faculty", "institute", "title",
+% "date", "author", "frame", "frames" (incl. total number), "empty"
+\DeclareOptionBeamer{footlineleft}[empty]{%
+  \setbeamertemplate{footline left}{%
+    \csname footlinebox@#1\endcsname {left}%
+  }%
+}%
+
+\DeclareOptionBeamer{footlinecenter}[empty]{%
+  \setbeamertemplate{footline center}{%
+    \csname footlinebox@#1\endcsname {center}%
+  }%
+}%
+\DeclareOptionBeamer{footlineright}[empty]{%
+  \setbeamertemplate{footline right}{%
+    \csname footlinebox@#1\endcsname {right}%
+  }%
+}%
+\ProcessOptionsBeamer
+
+\defbeamertemplate*{footline}{infoline}{
+	\begin{beamercolorbox}[wd=\paperwidth,ht=0.2mm]{separation line}%
+	\end{beamercolorbox}%
+	\leavevmode%
+	\hbox{%
+  	\begin{beamercolorbox}[wd=\paperwidth,ht=4mm,dp=3mm]{structure}%
+		\hspace{3mm}%
+		\begin{beamercolorbox}[wd=0.25\paperwidth]{structure}%
+			\raggedright\usebeamertemplate{footline left}%
+		\end{beamercolorbox}%
+		\hfill%
+		\begin{beamercolorbox}[wd=0.4\paperwidth]{structure}%
+			\centering\usebeamertemplate{footline center}%
+		\end{beamercolorbox}%
+		\hfill%
+		\begin{beamercolorbox}[wd=0.25\paperwidth]{structure}%
+			\raggedleft\usebeamertemplate{footline right}%
+		\end{beamercolorbox}%
+		\hspace*{3mm}%
+	\end{beamercolorbox}%
+	}\vskip0pt%
+}%  
+\mode<all>
