@@ -39,7 +39,7 @@
 	\begin{itemize}
 		\item{\lstinline{n_tra} different trajectories of size \lstinline{n_sim}}
 		\item{\lstinline{n_tra = 9; n_sim = 1000}}
-		\item{each matrix of size \lstinline{(n_tra, n_sim)}}	
+		\item{each of them is a matrix of size \lstinline{(n_sim, n_tra)}}	
 	\end{itemize}
 \end{frame}
 
@@ -48,14 +48,75 @@
 	Parameters that are optimized: \\
 	\lstinline{hst_inertia_engine, inertia_yy, hst_friction, crd_mass}
 	
-	\vspace{0.5cm}
 	\begin{align*}
-		\min_{p\in\mathbb{R}^4} f(p)& = &	 & \alpha_1\cdot \Vert \overline{U}_{hst} - U_{hst}\left(p\right) \Vert_{F}^2
-		+ \alpha_2\cdot \Vert \overline{U}_{crd} - U_{crd}\left(p\right) \Vert_{F}^2 \\
-		& & + & \alpha_3\cdot \Vert \overline{Y}_{hst} - Y_{hst}\left(p\right) \Vert_{F}^2
-		+ \alpha_4\cdot \Vert \overline{Y}_{crd} - Y_{crd}\left(p\right) \Vert_{F}^2 \\
-		s.t.& & & p_i \geq 0
+		\min_{p\in\mathbb{R}^4} f(p)& = & & \frac{1}{n_{\operatorname{tra}}}
+		\cdot\left(\alpha_1\cdot \Vert \overline{U}_{\operatorname{hst}} - U_{\operatorname{hst}}\left(p\right) \Vert_{\operatorname{F}}^2 + \dots \right) \\
+		\operatorname{s.t.} & & & p_i \geq 0
 	\end{align*}
+	
+	where
+	\begin{align*}
+		\alpha_1 & = \frac{1}{\Vert\overline{U}_{\operatorname{hst}}\Vert_{\operatorname{F}}^2} &
+		\Vert\overline{U}_{i,j}\Vert_{\operatorname{F}}^2 & = \sum_{j=1}^{n_{\operatorname{tra}}}\sum_{i=1}^{n_{\operatorname{sim}}}|\overline{U}_{i,j}|^2
+	\end{align*}
+	$\Vert\cdot\Vert_{\operatorname{F}}$ is the Frobenius norm
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influence of the Parameters}
+	$10\%$ deviation of parameter \dots cause in the objective function:
+	\begin{itemize}
+		\item{\makebox[4cm][l]{\lstinline{hst_inertia_engine}} \makebox[2cm][r]{$1\cdot 10^{-3}$}    \makebox[1cm]{}linear}
+		\item{\makebox[4cm][l]{\lstinline{inertia_yy}}         \makebox[2cm][r]{$3.3\cdot 10^{-3}$}  \makebox[1cm]{}linear}
+		\item{\makebox[4cm][l]{\lstinline{hst_friction}}       \makebox[2cm][r]{$7.8\cdot 10^{-11}$} \makebox[1cm]{}quadratic}
+		\item{\makebox[4cm][l]{\lstinline{crd_mass}}           \makebox[2cm][r]{$52\cdot 10^{-3}$}   \makebox[1cm]{}linear}
+	\end{itemize}
+	
+	\begin{columns}[t]
+		\column{.25\linewidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9cm, clip=true, width=\linewidth]{img/inertia_engine}
+			\end{figure}
+		\column{.25\linewidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9cm, clip=true, width=\linewidth]{img/inertia_yy}
+			\end{figure}
+		\column{.25\linewidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9cm, clip=true, width=\linewidth]{img/friction}
+			\end{figure}
+		\column{.25\linewidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9cm, clip=true, width=\linewidth]{img/mass}
+			\end{figure}
+		\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Solvers}
+	Conditions:
+	\begin{itemize}
+		\item{Starting values: $X\sim \operatorname{N}\left(\bar{x},\bar{x}/2\right)$, where $\bar{x}$ is the given value}
+		\item{Smarm Size: $10$}
+		\item{Function Tolerance: $10^{-9}$}
+		\item{Time Limit: 15 min}
+		\item{Max Iterations: $\infty$}
+	\end{itemize}
+	
+	 \vspace{0.5cm}
+	
+	\begin{tabular}{l|ccl}
+		& penalty & evaluations & time \\
+		\hline
+		Particle Swarm & $10^{-13}$ & $2500$ & 3 min \\
+		Pattern Search & $10^{-3}$ & $6000$ & 8 min \\
+		Genetic Algorithm & $10^{-2}$ & $7500$ & 10 min (time limit) \\
+		Simulated Annealing & $10^{-1}$ & $3000$ & 4 min \\
+	\end{tabular}
 \end{frame}
 
 \end{document}

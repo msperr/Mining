@@ -18,7 +18,7 @@ Document=Siemens Meeting 3.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=163
+Cursor=1
 
 [SessionInfo]
 FrameCount=1
