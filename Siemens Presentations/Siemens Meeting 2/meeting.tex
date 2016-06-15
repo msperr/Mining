@@ -1,0 +1,183 @@
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\usetheme[headline=section, footlineleft=empty, footlinecenter=empty, footlineright=frames]{TUMCD}
+\usefonttheme{professionalfonts}
+
+\title[Kurzform]{Meeting}
+\author{InYoung Choi, Olivia Kaufmann, Martin Sperr, Florian Wuttke}
+\date{May 31, 2016}
+
+\begin{document}
+
+\begin{frame}[c]
+    \begin{center}
+        \large{\textcolor{TUMblau2}{Optimization with the Derived Model}}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}[c]
+    \frametitle{ODE}
+
+    Second order ODE from Lagrange Formalism:
+    \begin{align*}
+      &A(x,p)
+      \begin{pmatrix} 
+        \ddot{s} \\ \ddot{\theta} \\
+      \end{pmatrix}
+      = b(x,u,p)
+    \end{align*}
+
+    Transformed into first order ODE:
+    \begin{align*}
+      &\frac{d}{dt}
+      \begin{pmatrix}
+      s \\ \theta \\ \dot{s} \\ \dot{\theta}
+      \end{pmatrix}
+      =
+      \begin{pmatrix}
+        \dot{s} \\ \dot{\theta} \\ A^{-1}(x,p)b(x,u,p) \\
+      \end{pmatrix} 
+      = f(x,u,p) \\
+    \end{align*}
+
+    \vspace{-1.0cm}
+
+    \begin{tabular}{ll}
+      & \\
+      state & $ x = (s,\theta,\dot{s},\dot{\theta})^T $ \\
+      control & $ u = (\tau_1,\tau_2)^T $ \\
+      parameters & $ p = (p_1,...,p_k)^T $ \\
+    \end{tabular}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Discretization of the ODE}
+	
+	%Discretize time interval:
+	%\begin{align*}
+	  %&[0,T] = [t_0,t_1] \cup \ldots \cup [t_{m-1},t_m] \\
+	%\end{align*}
+	
+	Discretize time interval:
+	\begin{align*}
+	  &[0,T] \rightarrow \left\{ 0=t_0, t_1, \dots, t_{m-1}, t_{m}=T 
+\right\} \\
+	\end{align*}
+	
+	Discretize state and control:
+	\begin{align*}
+	  &x_n = x(t_n) \\
+	  &u_n = u(t_n) \\
+	\end{align*}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{Discretization of the ODE}
+	
+% 	Solve ODE for every time step $h_n=t_{n+1}-t_n$ (Explicit Euler):
+	Explicit Euler for every time step $h_n=t_{n+1}-t_n$:
+	\begin{align*}
+        &x_{n+1} \approx \tilde{x}_{n+1}(p) = x_n + h_n f(x_n,u_n,p) \\
+	\end{align*}
+	
+	Discrete constraint:
+	\begin{align*}
+        &0 = x_{n} - \tilde{x}_{n}(p) \quad \forall n = 1,\ldots,m\\
+	\end{align*}
+
+	
+\end{frame}
+
+\begin{frame}
+    \frametitle{Optimization problem}
+
+    \begin{align*}
+        &\min\limits_p f(p) = 0
+        & &\\
+        &\\
+        &\text{s.t.}
+        & &x_{n} - \tilde{x}_{n}(p) = 0
+        & & &\forall n \\
+        &
+        & &p_i \geq 0
+        & & &\forall i \\
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Parameters}
+
+    \begin{tabular}{ll}
+        & \\
+        masses & $M_1$, $M_2$ \\
+        &\\
+        inertia of pulleys & $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$ \\
+        &\\
+        friction coefficients & $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, 
+        $\mu_{P_2}$  \\
+    \end{tabular}
+\end{frame}
+
+
+%%%%%%
+% Blackbox Optimization
+%%%%%
+\section{Black Box Model}
+
+\begin{frame}[c]
+    \begin{center}
+        \large{\textcolor{TUMblau2}{Optimization with the Black Box Model}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Parameters}
+
+    hoist:
+    \begin{align*}
+        &\text{inertia}_{\text{engine}} \\
+        &\text{inertia}_{\text{yy}} \\
+        &\text{friction} \\
+    \end{align*}
+    crowd:
+    \begin{align*}
+        &\text{mass} \\
+        &\text{inertia}_{\text{yy}} \\
+        &\text{cog}_{\text{x}} \\
+    \end{align*}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Optimization problem}
+    
+    \begin{align*}
+        &\min\limits_p f(p) =
+        & &\alpha_1 \|u_{\text{hst}}^* -u_{\text{hst}}(p) \| 
+        + \alpha_2 \|u_{\text{crd}}^* -u_{\text{crd}}(p) \| \\
+        &
+        & &+ \alpha_3 \|y^*_{\text{hst}} -y_{\text{hst}}(p) \| 
+        + \alpha_4 \|y^*_{\text{hst}} -y_{\text{hst}}(p) \| \\
+        &\\
+        &\text{s.t.}
+        & &p_i \geq 0 \quad \forall i \\
+    \end{align*}
+
+    with torque $u$ and position $y$.
+\end{frame}
+
+\end{document}
+
