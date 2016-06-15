@@ -196,13 +196,13 @@
 
      \vspace{0.5cm}
 
-     \begin{tabular}{l|ccc}
-         & iterations & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
+     \begin{tabular}{l|lrcc}
+         & iterations & feval & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
          \hline
-         SQP             & $177$ & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
-         Interior Point  & $186$ & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
-         Trust Region    & $12$  & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
-         Active Set      & $17$  & $1.9 \cdot 10^{-2}$ & $2.6 \cdot 10^{-2}$ \\
+         SQP             & $219$ & 241 & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Interior Point  & $218$ & 228 & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Trust Region    & $25$ ($112$ cg) & 26 & $1.8 \cdot 10^{-4}$ & $7.6 \cdot 10^{-4}$ \\
+         Active Set      & $244$  & 501 & $2.0 \cdot 10^{-4}$ & $8.3 \cdot 10^{-4}$ \\
      \end{tabular}
 \end{frame}
 
@@ -219,13 +219,13 @@
 
      \vspace{0.5cm}
 
-     \begin{tabular}{l|ccc}
-         & iterations & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
+     \begin{tabular}{l|lrcc}
+         & iterations & feval & $\frac{1}{2}\|x_{\text{real}} - x(p)\|$ &  $\frac{1}{2}\|x(p_{\text{real}}) - x(p)\|$ \\
          \hline
-         SQP             & $193$ & $8.9 \cdot 10^{-5}$ & $5.3 \cdot 10^{-6}$ \\
-         Interior Point  & $206$ & $8.9 \cdot 10^{-5}$ & $5.3 \cdot 10^{-6}$ \\
-         Trust Region    & $19$  & $8.9 \cdot 10^{-5}$ & $5.2 \cdot 10^{-6}$ \\
-         Active Set      & $17$  & $1.9 \cdot 10^{-2}$ & $1.9 \cdot 10^{-2}$ \\
+         SQP             & $225$ & 248 & $8.9 \cdot 10^{-5}$ & $5.4 \cdot 10^{-6}$ \\
+         Interior Point  & $262$ ($37$ cg) & 280 & $8.9 \cdot 10^{-5}$ & $5.4 \cdot 10^{-6}$ \\
+         Trust Region    & $27$ ($123$ cg)  & 28 & $8.9 \cdot 10^{-5}$ & $5.4 \cdot 10^{-6}$ \\
+         Active Set      & $231$  & 469 & $1.2 \cdot 10^{-4}$ & $5.0 \cdot 10^{-5}$ \\
      \end{tabular}
 \end{frame}
 
