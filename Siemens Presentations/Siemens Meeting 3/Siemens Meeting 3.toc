@@ -1,3 +1,0 @@
-\beamer@endinputifotherversion {3.24pt}
-\beamer@sectionintoc {1}{Black Box Model}{1}{0}{1}
-\beamer@sectionintoc {2}{Developed Model}{5}{0}{2}
