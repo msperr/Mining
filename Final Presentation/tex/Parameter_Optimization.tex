@@ -1,0 +1,72 @@
+\section{Parameter Optimization}
+
+\begin{frame}[c]
+\frametitle{Parameters}
+\onslide<1->
+Examples:
+\begin{itemize}
+	\item{Friction coefficients $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, $\mu_{P_2}$}
+	\item{Masses $M_1$, $M_2$}
+	\item{Inertia $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$}
+\end{itemize}
+\vspace{0.5cm}
+
+\onslide<2>
+Why do we need parameter optimization?
+\begin{itemize}
+	\item{Hard to measure}
+	\item{May change over time}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{Blackbox Model}
+	
+	\onslide<1->
+	\begin{itemize}
+		\item{Contains a realistic model from Siemens}
+		\item{Confidential information}
+	\end{itemize}
+
+	\vspace{0.5cm}
+	
+	\centering
+	\includegraphics<1>[width=.5\linewidth]{img/Model_0}
+	\includegraphics<2>[width=.5\linewidth]{img/Model_1}
+	\includegraphics<3>[width=.5\linewidth]{img/Model_2}
+	\includegraphics<4>[width=.5\linewidth]{img/Model_3}
+	\includegraphics<5>[width=.5\linewidth]{img/Model_4}
+
+%\begin{columns}[t]
+	%\column{.5\textwidth}
+		%\textbf{Input}
+		%\begin{itemize}
+			%\item{control}
+			%\item{parameters}
+		%\end{itemize}
+	%\column{.5\textwidth}
+		%\textbf{Output}
+		%\begin{itemize}
+			%\item{motion}
+		%\end{itemize}
+%\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Parameter Optimization}
+\onslide<1->
+Parameters to optimize:
+\begin{itemize}
+	\item{Parameters of own model}
+	\item{Black box model \\
+		$\Rightarrow$ derivative-free optimization}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\onslide<2>
+Define penalty terms \\
+$\Rightarrow$ minimize for parameter solutions
+
+\end{frame}
+
