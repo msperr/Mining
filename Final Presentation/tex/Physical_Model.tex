@@ -368,7 +368,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Multiple Shooting}
+    \frametitle{Problem Formulation}
     Natural approach: Optimal Control Problem
     \begin{align*}
         \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
@@ -380,17 +380,17 @@
         state & $ x = (s,\theta,\dot{s},\dot{\theta})^T $ \\
         control & $ u = (\tau_1,\tau_2)^T $ \\
         parameters & $ p = (p_1,...,p_k)^T $ \\
-        reference & $\bar{x}$ \\
+        desired motion & $\bar{x}$ \\
     \end{tabular}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Multiple Shooting}
+    \frametitle{Problem Formulation}
     \onslide<1->
     Input:
     \begin{itemize}
         \item{control $u$}
-        \item{reference trajectory $\bar{x}$ related to $u$}
+        \item{desired motion $\bar{x}$ related to $u$}
     \end{itemize}
 
     \onslide<2->
@@ -410,7 +410,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Multiple Shooting}
+    \frametitle{Problem Formulation}
 
     \onslide<1->
     Original Problem
