@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.36pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
@@ -72,21 +72,23 @@
 \headcommand {\beamer@subsectionpages {14}{38}}
 \headcommand {\slideentry {3}{0}{32}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{0}{33}{40/41}{}{0}}
-\headcommand {\beamer@framepages {40}{41}}
-\headcommand {\slideentry {3}{0}{34}{42/46}{}{0}}
-\headcommand {\beamer@framepages {42}{46}}
-\headcommand {\slideentry {3}{0}{35}{47/48}{}{0}}
-\headcommand {\beamer@framepages {47}{48}}
-\headcommand {\sectionentry {4}{Summary}{49}{Summary}{0}}
-\headcommand {\beamer@sectionpages {39}{48}}
-\headcommand {\beamer@subsectionpages {39}{48}}
-\headcommand {\slideentry {4}{0}{36}{49/49}{}{0}}
-\headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {4}{0}{37}{50/51}{}{0}}
-\headcommand {\beamer@framepages {50}{51}}
-\headcommand {\beamer@partpages {1}{51}}
-\headcommand {\beamer@subsectionpages {49}{51}}
-\headcommand {\beamer@sectionpages {49}{51}}
-\headcommand {\beamer@documentpages {51}}
-\headcommand {\def \inserttotalframenumber {37}}
+\headcommand {\slideentry {3}{0}{33}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {3}{0}{34}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {3}{0}{35}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {3}{0}{36}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\sectionentry {4}{Summary}{44}{Summary}{0}}
+\headcommand {\beamer@sectionpages {39}{43}}
+\headcommand {\beamer@subsectionpages {39}{43}}
+\headcommand {\slideentry {4}{0}{37}{44/44}{}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {4}{0}{38}{45/46}{}{0}}
+\headcommand {\beamer@framepages {45}{46}}
+\headcommand {\beamer@partpages {1}{46}}
+\headcommand {\beamer@subsectionpages {44}{46}}
+\headcommand {\beamer@sectionpages {44}{46}}
+\headcommand {\beamer@documentpages {46}}
+\headcommand {\def \inserttotalframenumber {38}}

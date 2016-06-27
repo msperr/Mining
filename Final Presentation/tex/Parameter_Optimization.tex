@@ -1,72 +1,89 @@
 \section{Parameter Optimization}
 
 \begin{frame}[c]
-\frametitle{Parameters}
-\onslide<1->
-Examples:
-\begin{itemize}
-	\item{Friction coefficients $\mu_{B_1}$, $\mu_{B_2}$, $\mu_{P_1}$, $\mu_{P_2}$}
-	\item{Masses $M_1$, $M_2$}
-	\item{Inertia $I_{B_1}$, $I_{B_2}$, $I_{P_1}$, $I_{P_2}$}
-\end{itemize}
-\vspace{0.5cm}
-
-\onslide<2>
-Why do we need parameter optimization?
-\begin{itemize}
-	\item{Hard to measure}
-	\item{May change over time}
-\end{itemize}
+	\frametitle{Motivation}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+			\textbf{Examples}
+			\begin{itemize}
+				\item{Friction coefficients}
+				\item{Masses}
+				\item{Inertia}
+			\end{itemize}
+			\vspace{.5cm}
+			\textbf{Black box model}
+			\begin{itemize}
+				\item{Realistic model from Siemens}
+				\item{Confidential information}
+			\end{itemize}
+		\column{.5\textwidth}
+			\centering
+			%\includegraphics<1>[width=\linewidth]{img/Model_0}
+			%\includegraphics<2>[width=\linewidth]{img/Model_1}
+			%\includegraphics<3>[width=\linewidth]{img/Model_2}
+			%\includegraphics<4>[width=\linewidth]{img/Model_3}
+			\includegraphics<1>[width=\linewidth]{img/Blackbox_4}
+	\end{columns}
 \end{frame}
 
 \begin{frame}[c]
-	\frametitle{Blackbox Model}
-	
-	\onslide<1->
-	\begin{itemize}
-		\item{Contains a realistic model from Siemens}
-		\item{Confidential information}
-	\end{itemize}
-
-	\vspace{0.5cm}
-	
-	\centering
-	\includegraphics<1>[width=.5\linewidth]{img/Model_0}
-	\includegraphics<2>[width=.5\linewidth]{img/Model_1}
-	\includegraphics<3>[width=.5\linewidth]{img/Model_2}
-	\includegraphics<4>[width=.5\linewidth]{img/Model_3}
-	\includegraphics<5>[width=.5\linewidth]{img/Model_4}
-
-%\begin{columns}[t]
-	%\column{.5\textwidth}
-		%\textbf{Input}
-		%\begin{itemize}
-			%\item{control}
-			%\item{parameters}
-		%\end{itemize}
-	%\column{.5\textwidth}
-		%\textbf{Output}
-		%\begin{itemize}
-			%\item{motion}
-		%\end{itemize}
-%\end{columns}
+	\frametitle{Trajectories}
+	\textbf{Input:} Joystick commands for Up/Down and Forth/Back \\
+	\vspace{.4cm}
+	\textbf{Output:} Position of the shovel
+	\vspace{-.3cm}
+	\begin{columns}[T]
+		\column{.5\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Joystick}
+		\end{figure}
+		\column{.5\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Position}
+		\end{figure}
+	\end{columns}
 \end{frame}
 
-\begin{frame}
-\frametitle{Parameter Optimization}
-\onslide<1->
-Parameters to optimize:
-\begin{itemize}
-	\item{Parameters of own model}
-	\item{Black box model \\
-		$\Rightarrow$ derivative-free optimization}
-\end{itemize}
-
-\vspace{0.5cm}
-
-\onslide<2>
-Define penalty terms \\
-$\Rightarrow$ minimize for parameter solutions
-
+\begin{frame}[c]
+	\frametitle{Objective Function}
+	4 Parameters are optimized: \\
+	\makebox[.24\textwidth][l]{Inertia (Engine)}
+	\makebox[.24\textwidth][l]{Inertia (Arm)}
+	\makebox[.24\textwidth][l]{Friction}
+	\makebox[.24\textwidth][l]{Mass}
+	
+	\vspace{.5cm}
+	Penalty Term:
+	\begin{align*}
+		\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n} \left(\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
+		\operatorname{s.t.} & & & p_j \geq 0
+	\end{align*}
 \end{frame}
 
+\begin{frame}[c]
+	\frametitle{Influence of the Parameters}
+	\begin{columns}[c]
+		\column{.65\textwidth}
+			10\% parameter deviation:
+			\vspace{.5cm}
+			\begin{itemize}
+				\item{\makebox[3cm][l]{Inertia (Engine):} $1\cdot 10^{-3}$}
+				\item{\makebox[3cm][l]{Inertia (Arm):} $3\cdot 10^{-3}$}
+				\item{\makebox[3cm][l]{Friction:} $8\cdot 10^{-11}$}
+				\item{\makebox[3cm][l]{Mass:} $5\cdot 10^{-2}$}
+			\end{itemize}
+		\column{.35\textwidth}
+			\vspace{-1.2cm}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 10cm 4cm 9.5cm, clip=true, width=\linewidth]{img/friction}
+			\end{figure}
+			\vspace{-0.6cm}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/mass}
+			\end{figure}
+	\end{columns}
+\end{frame}
