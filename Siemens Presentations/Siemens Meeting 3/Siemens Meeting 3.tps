@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Siemens Meeting 3.tex
 
 [Frame0_View0,0]
-TopLine=65
-Cursor=3043
+TopLine=101
+Cursor=3869
 
 [SessionInfo]
 FrameCount=1

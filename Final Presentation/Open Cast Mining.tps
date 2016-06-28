@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=50
-Cursor=1236
+TopLine=52
+Cursor=1238
 
 [Frame1]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=tex\Parameter_Optimization.tex
 
 [Frame4_View0,0]
-TopLine=63
-Cursor=2772
+TopLine=78
+Cursor=2803
 
 [SessionInfo]
 FrameCount=5

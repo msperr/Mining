@@ -186,8 +186,63 @@
 
 
 \section{Black Box Model}
+\begin{frame}[c]
+	\frametitle{Test Run (1)}
+	14 different cases:
+	\begin{itemize}
+		\item{Starting values: $N(\mu,\frac{\mu} 2), N(\mu,\frac{\mu}{20}), N(\mu,\frac{\mu}{200}), N(\frac{\mu}{10},\frac{\mu}{20}), N(10\mu,5\mu)$}
+		\item{Swarm sizes: $4,10,40$}
+		\item{Objective function: torques+positions, only positions}
+		\item{4 solvers, each 5 loops per case}
+	\end{itemize}
+	Results:
+	\begin{itemize}
+		\item{Better values for "only position" (Particle Swarm: equal)}
+		\item{Genetic Algorithm / Simulated Annealing better for good starting values, but much worse than Particle Swarm / Pattern Search}
+		\item{Swarm Size changes have no effect}
+		\item{Funccount independent from starting values, independent from objective function}
+		\item{Time behaves as funccount}
+	\end{itemize}
+\end{frame}
 
+\begin{frame}[c]
+	\frametitle{Test Run (2)}
+	5 different cases:
+	\begin{itemize}
+		\item{Starting values as before}
+		\item{Solvers: Particle Swarm (torques + positions, only positions), Pattern Search (only positions)}
+		\item{each 10 loops per case}
+	\end{itemize}
+	\vspace{.5cm}
+	Results:
+	\begin{itemize}
+		\item{Starting values too big $\Rightarrow$ unrealistic results}
+		\item{Similar results}
+		\item{Particle Swarm is much faster}
+		\item{Friction still hard to determine}
+	\end{itemize}
+\end{frame}
 
-
+\begin{frame}[c]
+	\frametitle{Results}
+	Test Run (1)
+	\begin{tabular}{l|lcrll}
+		                    & value      & evaluations & time   & $\operatorname{dev}_{max}$ & $\operatorname{dev}_{mean}$ \\
+		\hline
+		Particle Swarm      & $10^{-12}$ & $2200$      & 6 min  & $10^{-1.0}$                & $10^{-3.8}$                 \\
+		Pattern Search      & $10^{-11}$ & $6500$      & 17 min & $10^{-1.3}$                & $10^{-3.7}$                 \\
+		Genetic Algorithm   & $10^{-4}$  & $5500$      & 14 min & $10^{-0.5}$                & $10^{-1.0}$                 \\
+		Simulated Annealing & $10^{-3}$  & $4200$      & 11 min & $10^{-0.3}$                & $10^{-0.6}$                 \\
+	\end{tabular} \\
+	\vspace{.5cm}
+	Test Run (2)
+	\begin{tabular}{l|lcrll}
+	                       & value      & evaluations & time   & $\operatorname{dev}_{max}$ & $\operatorname{dev}_{mean}$ \\
+		\hline
+		Particle Swarm (t+p) & $10^{-10}$ & $2900$      & 8 min  & $10^{-1.2}$                & $10^{-4.0}$                 \\
+		Particle Swarm (p)   & $10^{-12}$ & $2000$      & 5 min  & $10^{-1.0}$                & $10^{-3.9}$                 \\
+		Pattern Search (p)   & $10^{-12}$ & $6200$      & 17 min & $10^{-1.5}$                & $10^{-3.8}$                 \\
+	\end{tabular}
+\end{frame}
 
 \end{document}

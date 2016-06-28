@@ -18,11 +18,11 @@
 			\end{itemize}
 		\column{.5\textwidth}
 			\centering
-			%\includegraphics<1>[width=\linewidth]{img/Model_0}
-			%\includegraphics<2>[width=\linewidth]{img/Model_1}
-			%\includegraphics<3>[width=\linewidth]{img/Model_2}
-			%\includegraphics<4>[width=\linewidth]{img/Model_3}
-			\includegraphics<1>[width=\linewidth]{img/Blackbox_4}
+			\includegraphics<1>[width=\linewidth]{img/Blackbox_0}
+			\includegraphics<2>[width=\linewidth]{img/Blackbox_1}
+			\includegraphics<3>[width=\linewidth]{img/Blackbox_2}
+			\includegraphics<4>[width=\linewidth]{img/Blackbox_3}
+			\includegraphics<5>[width=\linewidth]{img/Blackbox_4}
 	\end{columns}
 \end{frame}
 
@@ -48,18 +48,21 @@
 
 \begin{frame}[c]
 	\frametitle{Objective Function}
-	4 Parameters are optimized: \\
-	\makebox[.24\textwidth][l]{Inertia (Engine)}
-	\makebox[.24\textwidth][l]{Inertia (Arm)}
-	\makebox[.24\textwidth][l]{Friction}
-	\makebox[.24\textwidth][l]{Mass}
-	
+	\textbf{Optimized Parameters:}
+	\begin{itemize}
+		\item{Inertia (Engine)}
+		\item{Inertia (Arm)}
+		\item{Friction}
+		\item{Mass}
+	\end{itemize}
 	\vspace{.5cm}
-	Penalty Term:
+	\textbf{Penalty Term:}
 	\begin{align*}
 		\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n} \left(\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
 		\operatorname{s.t.} & & & p_j \geq 0
 	\end{align*}
+	
+	$\overline{X}_i$ reference trajectory
 \end{frame}
 
 \begin{frame}[c]
@@ -86,4 +89,16 @@
 				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/mass}
 			\end{figure}
 	\end{columns}
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{Solvers}
+	\begin{tabular}{l|lcr}
+		                    & value      & evaluations & time   \\
+		\hline
+		Particle Swarm      & $10^{-12}$ & $2200$      & 6 min  \\
+		Pattern Search      & $10^{-11}$ & $6500$      & 17 min \\
+		Genetic Algorithm   & $10^{-4}$  & $5500$      & 14 min \\
+		Simulated Annealing & $10^{-3}$  & $4200$      & 11 min \\
+	\end{tabular}
 \end{frame}
