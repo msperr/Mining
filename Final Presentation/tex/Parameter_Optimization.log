@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  28 JUN 2016 12:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.9)  2 JUL 2016 14:52
 entering extended mode
 **Parameter_Optimization.tex
 ("C:\Users\Martin\Documents\Studium\Case Studies\Presentations\Final Presentation\tex\Parameter_Optimization.tex"
@@ -1794,6 +1794,34 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+! Undefined control sequence.
+<argument> \scriptsize 
+                       {max}
+l.97 ...   & dev\raisebox{-.5ex}{\scriptsize{max}}
+                                                   & $\operatorname{dev}_{me...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+! Undefined control sequence.
+<recently read> \operatorname 
+                              
+l.97 ...{-.5ex}{\scriptsize{max}} & $\operatorname
+                                                  {dev}_{mean}$ \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no P in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -1881,11 +1909,11 @@ Missing character: There is no n in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 22 strings out of 493921
- 550 string characters out of 3144874
- 55031 words of memory out of 3000000
- 3414 multiletter control sequences out of 15000+200000
+ 23 strings out of 493921
+ 560 string characters out of 3144874
+ 56031 words of memory out of 3000000
+ 3415 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 18i,8n,12p,286b,99s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,8n,12p,286b,106s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

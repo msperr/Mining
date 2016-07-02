@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.20)  2 JUL 2016 17:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.20)  2 JUL 2016 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,28 +1156,39 @@ Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 122
  [11
 
 ]
-Underfull \hbox (badness 2205) in paragraph at lines 181--181
-[]\T1/phv/m/n/10.95 Better pre-dic-tion and
+Overfull \vbox (2.95209pt too high) detected at line 144
  []
 
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 181
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 144
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [12
 
 ]
-Underfull \hbox (badness 2205) in paragraph at lines 181--181
+Underfull \hbox (badness 2205) in paragraph at lines 203--203
 []\T1/phv/m/n/10.95 Better pre-dic-tion and
  []
 
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 181
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 203
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [13
+
+]
+Underfull \hbox (badness 2205) in paragraph at lines 203--203
+[]\T1/phv/m/n/10.95 Better pre-dic-tion and
+ []
+
+File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
+<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 203
+.
+(pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
+ [14
 
 ]) (./tex/Physical_Model.tex
 (./Open Cast Mining.toc)
@@ -1185,7 +1196,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
  <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 1.
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [14
+ [15
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1203,7 +1214,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 28.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [15
+ [16
 
 ]
 Overfull \vbox (5.69583pt too high) detected at line 28
@@ -1214,10 +1225,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 28.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [16
+ [17
 
 ]
-<img/Excavator_Only.pdf, id=183, 3382.2361pt x 2392.13695pt>
+<img/Excavator_Only.pdf, id=189, 3382.2361pt x 2392.13695pt>
 File: img/Excavator_Only.pdf Graphic file (type pdf)
 
 <use img/Excavator_Only.pdf>
@@ -1232,10 +1243,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 43.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [17
+ [18
 
  <./img/Excavator_Only.pdf>]
-<img/Excavator_coordinates2.pdf, id=208, 3382.2361pt x 2392.13695pt>
+<img/Excavator_coordinates2.pdf, id=214, 3382.2361pt x 2392.13695pt>
 File: img/Excavator_coordinates2.pdf Graphic file (type pdf)
 
 <use img/Excavator_coordinates2.pdf>
@@ -1250,10 +1261,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 62.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [18
+ [19
 
  <./img/Excavator_coordinates2.pdf>]
-<img/Excavator_dof2.pdf, id=233, 3382.2361pt x 2392.13695pt>
+<img/Excavator_dof2.pdf, id=240, 3382.2361pt x 2392.13695pt>
 File: img/Excavator_dof2.pdf Graphic file (type pdf)
 
 <use img/Excavator_dof2.pdf>
@@ -1268,10 +1279,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 85.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [19
+ [20
 
  <./img/Excavator_dof2.pdf>]
-<img/Excavator_mass2.pdf, id=275, 3382.2361pt x 2392.13695pt>
+<img/Excavator_mass2.pdf, id=281, 3382.2361pt x 2392.13695pt>
 File: img/Excavator_mass2.pdf Graphic file (type pdf)
 
 <use img/Excavator_mass2.pdf>
@@ -1286,7 +1297,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 104
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [20
+ [21
 
  <./img/Excavator_mass2.pdf>]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1295,7 +1306,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 123
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [21
+ [22
 
 ]
 File: img/Excavator_Only.pdf Graphic file (type pdf)
@@ -1311,7 +1322,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 179
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [22
+ [23
 
 ]
 File: img/Excavator_Only.pdf Graphic file (type pdf)
@@ -1327,7 +1338,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 201
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [23
+ [24
 
 ]
 File: img/Excavator_Only.pdf Graphic file (type pdf)
@@ -1343,7 +1354,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 226
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [24
+ [25
 
 ]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1352,7 +1363,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 281
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [25
+ [26
 
 ]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1361,7 +1372,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 316
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [26
+ [27
 
 ])
 (./tex/Parameter_Identification_Physical_Model.tex (./Open Cast Mining.toc)
@@ -1370,7 +1381,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 1.
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [27
+ [28
 
 ]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1379,7 +1390,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 18.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [28
+ [29
 
 ]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1388,10 +1399,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 36.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [29
+ [30
 
 ]
-<img/multShootPlot.pdf, id=382, 614.295pt x 794.97pt>
+<img/multShootPlot.pdf, id=388, 614.295pt x 794.97pt>
 File: img/multShootPlot.pdf Graphic file (type pdf)
 
 <use img/multShootPlot.pdf>
@@ -1406,7 +1417,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 47.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [30
+ [31
 
  <./img/multShootPlot.pdf>]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1414,15 +1425,6 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 69.
 
-(pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [31
-
-]
-File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
-
-<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 113
-.
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [32
 
@@ -1439,20 +1441,29 @@ Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 113
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 
 <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 125
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 113
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [34
 
 ]
-<img/contExplEulerPlot.pdf, id=444, 614.295pt x 794.97pt>
+File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
+
+<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 125
+.
+(pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
+ [35
+
+]
+<img/contExplEulerPlot.pdf, id=450, 614.295pt x 794.97pt>
 File: img/contExplEulerPlot.pdf Graphic file (type pdf)
 
 <use img/contExplEulerPlot.pdf>
 Package pdftex.def Info: img/contExplEulerPlot.pdf used on input line 145.
 (pdftex.def)             Requested size: 171.21765pt x 131.13443pt.
 
-<img/stepExplEulerPlot.pdf, id=446, 614.295pt x 794.97pt>
+<img/stepExplEulerPlot.pdf, id=452, 614.295pt x 794.97pt>
 File: img/stepExplEulerPlot.pdf Graphic file (type pdf)
 
 <use img/stepExplEulerPlot.pdf>
@@ -1463,7 +1474,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 145
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [35
+ [36
 
  <./img/contExplEulerPlot.pdf> <./img/stepExplEulerPlot.pdf>]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1472,16 +1483,16 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 156
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [36
+ [37
 
 ]
-<img/convPlotPhi.pdf, id=519, 614.295pt x 794.97pt>
+<img/convPlotPhi.pdf, id=526, 614.295pt x 794.97pt>
 File: img/convPlotPhi.pdf Graphic file (type pdf)
  <use img/convPlotPhi.pdf>
 Package pdftex.def Info: img/convPlotPhi.pdf used on input line 172.
 (pdftex.def)             Requested size: 171.21765pt x 131.53044pt.
 
-<img/convPlotX.pdf, id=521, 614.295pt x 794.97pt>
+<img/convPlotX.pdf, id=528, 614.295pt x 794.97pt>
 File: img/convPlotX.pdf Graphic file (type pdf)
  <use img/convPlotX.pdf>
 Package pdftex.def Info: img/convPlotX.pdf used on input line 172.
@@ -1492,16 +1503,16 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 172
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [37
+ [38
 
- <./img/convPlotPhi.pdf> <./img/convPlotX.pdf>] <img/convPlotS.pdf, id=679, 614
+ <./img/convPlotPhi.pdf> <./img/convPlotX.pdf>] <img/convPlotS.pdf, id=685, 614
 .295pt x 794.97pt>
 File: img/convPlotS.pdf Graphic file (type pdf)
 
 <use img/convPlotS.pdf>
 Package pdftex.def Info: img/convPlotS.pdf used on input line 193.
 (pdftex.def)             Requested size: 171.21765pt x 131.53044pt.
- <img/convPlotT.pdf, id=681, 614.295pt x 794.97pt>
+ <img/convPlotT.pdf, id=687, 614.295pt x 794.97pt>
 File: img/convPlotT.pdf Graphic file (type pdf)
 
 <use img/convPlotT.pdf>
@@ -1514,7 +1525,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 193
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [38
+ [39
 
  <./img/convPlotS.pdf> <./img/convPlotT.pdf>]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1522,17 +1533,17 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 199
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [39
+ [40
 
 ]
-<img/convPlotTrajS.pdf, id=871, 614.295pt x 794.97pt>
+<img/convPlotTrajS.pdf, id=878, 614.295pt x 794.97pt>
 File: img/convPlotTrajS.pdf Graphic file (type pdf)
 
 <use img/convPlotTrajS.pdf>
 Package pdftex.def Info: img/convPlotTrajS.pdf used on input line 215.
 (pdftex.def)             Requested size: 171.21765pt x 131.53044pt.
 
-<img/convPlotTrajT.pdf, id=873, 614.295pt x 794.97pt>
+<img/convPlotTrajT.pdf, id=880, 614.295pt x 794.97pt>
 File: img/convPlotTrajT.pdf Graphic file (type pdf)
 
 <use img/convPlotTrajT.pdf>
@@ -1543,7 +1554,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 215
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [40
+ [41
 
  <./img/convPlotTrajS.pdf> <./img/convPlotTrajT.pdf>]) (./tex/Parameter_Optimiz
 ation.tex
@@ -1552,10 +1563,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
  <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 1.
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [41
+ [42
 
 ]
-<img/Blackbox_0.pdf, id=995, 646.53195pt x 512.80405pt>
+<img/Blackbox_0.pdf, id=1001, 646.53195pt x 512.80405pt>
 File: img/Blackbox_0.pdf Graphic file (type pdf)
 
 <use img/Blackbox_0.pdf>
@@ -1566,9 +1577,9 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [42
+ [43
 
- <./img/Blackbox_0.pdf>] <img/Blackbox_1.pdf, id=1004, 646.53195pt x 512.80405p
+ <./img/Blackbox_0.pdf>] <img/Blackbox_1.pdf, id=1011, 646.53195pt x 512.80405p
 t>
 File: img/Blackbox_1.pdf Graphic file (type pdf)
 
@@ -1580,9 +1591,9 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [43
+ [44
 
- <./img/Blackbox_1.pdf>] <img/Blackbox_2.pdf, id=1024, 646.53195pt x 512.80405p
+ <./img/Blackbox_1.pdf>] <img/Blackbox_2.pdf, id=1030, 646.53195pt x 512.80405p
 t>
 File: img/Blackbox_2.pdf Graphic file (type pdf)
 
@@ -1594,9 +1605,9 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [44
+ [45
 
- <./img/Blackbox_2.pdf>] <img/Blackbox_3.pdf, id=1043, 646.53195pt x 512.80405p
+ <./img/Blackbox_2.pdf>] <img/Blackbox_3.pdf, id=1049, 646.53195pt x 512.80405p
 t>
 File: img/Blackbox_3.pdf Graphic file (type pdf)
 
@@ -1608,9 +1619,9 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [45
+ [46
 
- <./img/Blackbox_3.pdf>] <img/Blackbox_4.pdf, id=1062, 646.53195pt x 512.80405p
+ <./img/Blackbox_3.pdf>] <img/Blackbox_4.pdf, id=1068, 646.53195pt x 512.80405p
 t>
 File: img/Blackbox_4.pdf Graphic file (type pdf)
 
@@ -1622,15 +1633,15 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 27.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [46
+ [47
 
- <./img/Blackbox_4.pdf>] <img/Joystick.pdf, id=1081, 597.23125pt x 845.1575pt>
+ <./img/Blackbox_4.pdf>] <img/Joystick.pdf, id=1087, 597.23125pt x 845.1575pt>
 File: img/Joystick.pdf Graphic file (type pdf)
 
 <use img/Joystick.pdf>
 Package pdftex.def Info: img/Joystick.pdf used on input line 47.
 (pdftex.def)             Requested size: 171.21765pt x 147.67735pt.
- <img/Position.pdf, id=1083, 597.23125pt x 845.1575pt>
+ <img/Position.pdf, id=1089, 597.23125pt x 845.1575pt>
 File: img/Position.pdf Graphic file (type pdf)
 
 <use img/Position.pdf>
@@ -1645,7 +1656,7 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 47.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [47
+ [48
 
  <./img/Joystick.pdf> <./img/Position.pdf>]
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1653,16 +1664,16 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 66.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [48
+ [49
 
 ]
-<img/friction.pdf, id=1146, 597.23125pt x 845.1575pt>
+<img/friction.pdf, id=1153, 597.23125pt x 845.1575pt>
 File: img/friction.pdf Graphic file (type pdf)
  <use img/friction.pdf>
 Package pdftex.def Info: img/friction.pdf used on input line 92.
 (pdftex.def)             Requested size: 119.85445pt x 94.14752pt.
 
-<img/mass.pdf, id=1148, 597.23125pt x 845.1575pt>
+<img/mass.pdf, id=1155, 597.23125pt x 845.1575pt>
 File: img/mass.pdf Graphic file (type pdf)
  <use img/mass.pdf>
 Package pdftex.def Info: img/mass.pdf used on input line 92.
@@ -1673,15 +1684,19 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 92.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [49
+ [50
 
  <./img/friction.pdf> <./img/mass.pdf>]
+Overfull \hbox (0.95856pt too wide) in paragraph at lines 111--111
+[]  
+ []
+
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
- <use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 104
+<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 111
 .
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [50
+ [51
 
 ]) (./Open Cast Mining.toc)
 File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
@@ -1690,28 +1705,10 @@ File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
 Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 64.
 
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
- [51
-
-]
-<img/Excavator_results.pdf, id=1238, 3382.2361pt x 2392.13695pt>
-File: img/Excavator_results.pdf Graphic file (type pdf)
-
-<use img/Excavator_results.pdf>
-Package pdftex.def Info: img/Excavator_results.pdf used on input line 78.
-(pdftex.def)             Requested size: 171.21765pt x 163.06096pt.
-File: img/Blackbox_4.pdf Graphic file (type pdf)
- <use img/Blackbox_4.pdf>
-Package pdftex.def Info: img/Blackbox_4.pdf used on input line 78.
-(pdftex.def)             Requested size: 171.21765pt x 135.79852pt.
-File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
-
-<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
-Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 78.
-
-(pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [52
 
- <./img/Excavator_results.pdf>]
+]
+<img/Excavator_results.pdf, id=1243, 3382.2361pt x 2392.13695pt>
 File: img/Excavator_results.pdf Graphic file (type pdf)
 
 <use img/Excavator_results.pdf>
@@ -1729,6 +1726,24 @@ Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 78.
 (pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
  [53
 
+ <./img/Excavator_results.pdf>]
+File: img/Excavator_results.pdf Graphic file (type pdf)
+
+<use img/Excavator_results.pdf>
+Package pdftex.def Info: img/Excavator_results.pdf used on input line 78.
+(pdftex.def)             Requested size: 171.21765pt x 163.06096pt.
+File: img/Blackbox_4.pdf Graphic file (type pdf)
+ <use img/Blackbox_4.pdf>
+Package pdftex.def Info: img/Blackbox_4.pdf used on input line 78.
+(pdftex.def)             Requested size: 171.21765pt x 135.79852pt.
+File: TUMLogo_oZ_Vollfl_blau_CMYK.pdf Graphic file (type pdf)
+
+<use TUMLogo_oZ_Vollfl_blau_CMYK.pdf>
+Package pdftex.def Info: TUMLogo_oZ_Vollfl_blau_CMYK.pdf used on input line 78.
+
+(pdftex.def)             Requested size: 30.15121pt x 15.93355pt.
+ [54
+
 ]
 \tf@nav=\write7
 \openout7 = `"Open Cast Mining.nav"'.
@@ -1745,15 +1760,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `"Open Cast Mining".out' has not changed.
-(rerunfilecheck)             Checksum: 45F7833ECA322D00B6DE7CEF6D10F77C;273.
+(rerunfilecheck)             Checksum: 90E660318693301AA4A3FB838E1AD4B6;292.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 19784 strings out of 494976
- 370899 string characters out of 6179137
- 448929 words of memory out of 5000000
- 22337 multiletter control sequences out of 15000+600000
- 64943 words of font info for 79 fonts, out of 8000000 for 9000
+ 19788 strings out of 494976
+ 370943 string characters out of 6179137
+ 449280 words of memory out of 5000000
+ 22338 multiletter control sequences out of 15000+600000
+ 66097 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  59i,19n,72p,937b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1768,10 +1783,10 @@ nts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
 vetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 .pfb>
-Output written on "Open Cast Mining.pdf" (53 pages, 4770270 bytes).
+Output written on "Open Cast Mining.pdf" (54 pages, 4773101 bytes).
 PDF statistics:
- 1354 PDF objects out of 1440 (max. 8388607)
- 998 compressed objects within 10 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 1361 PDF objects out of 1440 (max. 8388607)
+ 1003 compressed objects within 11 object streams
+ 114 named destinations out of 1000 (max. 500000)
  355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
