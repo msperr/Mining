@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=34
-Cursor=834
+TopLine=46
+Cursor=1146
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Problem_Setting.tex
+Document=tex\Project_Overview.tex
 
 [Frame1_View0,0]
-TopLine=117
-Cursor=3776
+TopLine=99
+Cursor=3206
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=tex\Physical_Model.tex
 
 [Frame2_View0,0]
-TopLine=24
-Cursor=661
+TopLine=0
+Cursor=393
 
 [Frame3]
 Flags=0
