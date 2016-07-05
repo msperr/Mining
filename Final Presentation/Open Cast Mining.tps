@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=tex\Parameter_Optimization.tex
 
 [Frame4_View0,0]
-TopLine=104
-Cursor=4319
+TopLine=137
+Cursor=4966
 
 [SessionInfo]
 FrameCount=5
