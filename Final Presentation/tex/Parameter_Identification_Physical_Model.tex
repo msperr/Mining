@@ -46,10 +46,24 @@
 	\end{figure}
 \end{frame}
 
-%\begin{frame}
-%    \frametitle{Problem Formulation}
-%    explaining setting for parameter identification
-%\end{frame}
+\begin{frame}
+    \frametitle{Problem Setting}
+    Given:
+    \begin{itemize}
+        \item{control $\bar{u}$}
+        \item{motion $\bar{x}$ related to $\bar{u}$ and $\bar{p}$}
+    \end{itemize}
+
+    Unknown:
+    \begin{itemize}
+        \item{parameters $\bar{p}$ of the excavator}
+    \end{itemize}
+
+    Output:
+    \begin{itemize}
+        \item{parameters $p$}
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
     \frametitle{Problem Formulation}
@@ -104,7 +118,10 @@
                             & & p & \geq 0 & & \\
     \end{align*}
 
-    \onslide<2>
+    \onslide<2->
+    Set $x \leftarrow \bar{x}$
+
+    \onslide<3>
     Reinterpreted Problem
     \begin{align*}
         \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
@@ -117,10 +134,13 @@
         \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
         \operatorname{s.t.} & & p & \geq 0 & & \\
     \end{align*}
+    %\begin{align*}
+    %    & \Phi_n(x,\bar{u},p) = x_{n+1} - \Psi(x_n,\bar{u}_n,p)   \quad \forall n = 0,\ldots,m-1 \\
+    %\end{align*}
     \begin{itemize}
-        \item{$\bar{x}$ solves ODE}
+        \item{$\bar{x}$ solves ODE for $\bar{p}$}
         \item{$\Phi(\bar{x},\bar{u},\bar{p}) \rightarrow 0$ for discretization $m \rightarrow \infty$}
-        \item{Problem dimension fixed for $m \rightarrow \infty$}
+        \item{number of parameters fix}
     \end{itemize}
 \end{frame}
 
@@ -151,6 +171,7 @@
         \item{1500 time steps}
         \item{$p_0 \in [0.8  \bar{p}, 1.2  \bar{p}]$}
         \item{$x(p)$ solution of ODE for given $p$}
+        \item{internally 5 trajectories in parallel}
     \end{itemize}
 
 \end{frame}
@@ -190,12 +211,6 @@
     \begin{center}
         Exact up to $3\text{cm}$
     \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Results}
-
-    movies: reference and optimizes trajectory
 \end{frame}
 
 \begin{frame}
