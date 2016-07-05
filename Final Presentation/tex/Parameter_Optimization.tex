@@ -2,15 +2,19 @@
 
 \begin{frame}[c]
 	\frametitle{Motivation}
-	\begin{columns}[T]
+	\begin{columns}[c]
 		\column{.5\textwidth}
+			\onslide<1->
 			\textbf{Examples}
 			\begin{itemize}
 				\item{Friction coefficients}
 				\item{Masses}
 				\item{Inertia}
 			\end{itemize}
+			
 			\vspace{.5cm}
+			
+			\onslide<2->
 			\textbf{Black box model}
 			\begin{itemize}
 				\item{Realistic model from Siemens}
@@ -18,11 +22,11 @@
 			\end{itemize}
 		\column{.5\textwidth}
 			\centering
-			\includegraphics<1>[width=\linewidth]{img/Blackbox_0}
-			\includegraphics<2>[width=\linewidth]{img/Blackbox_1}
-			\includegraphics<3>[width=\linewidth]{img/Blackbox_2}
-			\includegraphics<4>[width=\linewidth]{img/Blackbox_3}
-			\includegraphics<5>[width=\linewidth]{img/Blackbox_4}
+			\includegraphics<1-2>[width=\linewidth]{img/Blackbox_0}
+			\includegraphics<3>[width=\linewidth]{img/Blackbox_1}
+			\includegraphics<4>[width=\linewidth]{img/Blackbox_2}
+			\includegraphics<5>[width=\linewidth]{img/Blackbox_3}
+			\includegraphics<6->[width=\linewidth]{img/Blackbox_4}
 	\end{columns}
 \end{frame}
 
@@ -34,11 +38,13 @@
 	\vspace{-.3cm}
 	\begin{columns}[T]
 		\column{.5\textwidth}
+		\onslide<2->
 		\begin{figure}
 			\centering
 			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Joystick}
 		\end{figure}
 		\column{.5\textwidth}
+		\onslide<3->
 		\begin{figure}
 			\centering
 			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Position}
@@ -48,26 +54,59 @@
 
 \begin{frame}[c]
 	\frametitle{Objective Function}
-	\textbf{Optimized Parameters:}
-	\begin{itemize}
-		\item{Inertia (Engine)}
-		\item{Inertia (Arm)}
-		\item{Friction}
-		\item{Mass}
-	\end{itemize}
-	\vspace{.5cm}
-	\textbf{Penalty Term:}
-	\begin{align*}
-		\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n} \left(\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
-		\operatorname{s.t.} & & & p_j \geq 0
-	\end{align*}
+	\onslide<1->
+		\textbf{Optimized Parameters:}
+		\begin{itemize}
+			\item{Inertia (Engine)}
+			\item{Inertia (Arm)}
+			\item{Friction}
+			\item{Mass}
+		\end{itemize}
 	
-	$\overline{X}_i$ reference trajectory
+		\vspace{.5cm}
+	
+	\onslide<2->
+		\textbf{Penalty Term:}
+		\vspace{-.5cm}
+		\textcolor{white}{
+		\begin{overprint}
+			\onslide<2>
+				\begin{align*}
+					\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n}\left(\frac{\textcolor{black}{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
+					\operatorname{s.t.} & & & p_j \geq 0
+				\end{align*}
+			\onslide<3>
+				\begin{align*}
+					\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n}\left(\textcolor{black}{\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2}} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
+					\operatorname{s.t.} & & & p_j \geq 0
+				\end{align*}
+			\onslide<4>
+				\begin{align*}
+					\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n}\left(\textcolor{black}{\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}}\right) \\
+					\operatorname{s.t.} & & & p_j \geq 0
+				\end{align*}	
+			\onslide<5>
+				\begin{align*}
+					\min_{p\in\mathbb{R}^4}f(p) & = & & \textcolor{black}{\frac 1 n \cdot \sum_{i=1}^{n}\left(\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right)} \\
+					\operatorname{s.t.} & & & p_j \geq 0
+				\end{align*}
+			\onslide<6->
+				\textcolor{black}{
+				\begin{align*}
+					\min_{p\in\mathbb{R}^4}f(p) & = & & \frac 1 n \cdot \sum_{i=1}^{n}\left(\frac{\Vert \overline{X}_i - X_i \left(p\right)\Vert^2}{\Vert \overline{X}_i\Vert^2} + \frac{\Vert \overline{Y}_i - Y_i \left(p\right)\Vert^2}{\Vert \overline{Y}_i\Vert^2}\right) \\
+					\operatorname{s.t.} & & & p_j \geq 0
+				\end{align*}}
+		\end{overprint}}
+	
+	\onslide<4->
+		$\overline{X}_i$, $\overline{Y}_i$ reference trajectories
 \end{frame}
 
 \begin{frame}[c]
 	\frametitle{Influence of the Parameters}
 	\begin{columns}[c]
+	
+		\onslide<1->
 		\column{.65\textwidth}
 			10\% parameter deviation:
 			\vspace{.5cm}
@@ -77,6 +116,11 @@
 				\item{\makebox[3cm][l]{Friction:} $8\cdot 10^{-11}$}
 				\item{\makebox[3cm][l]{Mass:} $5\cdot 10^{-2}$}
 			\end{itemize}
+			\vspace{.5cm}
+		\onslide<2->
+			Big parameter changes $\Rightarrow$ Small effects
+		
+		\onslide<3->
 		\column{.35\textwidth}
 			\vspace{-1.2cm}
 			\begin{figure}
@@ -93,12 +137,16 @@
 
 \begin{frame}[c]
 	\frametitle{Solvers}
+	
+	\onslide<1->
 	\begin{itemize}
 		\item{Derivative free optimization methods}
 		\item{Deterministic or stochastic approaches}
 		\item{Decrease function value by evaluating systematically}
 	\end{itemize}
 	\vspace{.5cm}
+	
+	\onslide<2->
 	{\renewcommand{\arraystretch}{1.5}
 	\begin{tabular}{l|lcrll}
 		                    & value      & evaluations & time   & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
