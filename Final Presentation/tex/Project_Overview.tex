@@ -13,13 +13,6 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Problem Setting: Schematic Illustration}
-	\begin{figure}[bth]
-		\centering
-		\includegraphics[width=.5\linewidth]{img/Problem_1}
-	\end{figure}
-\end{frame}
 
 %\begin{frame}
 %	\frametitle{Problem Setting}
@@ -101,6 +94,10 @@
             \centering
             $\Downarrow$
             
+            
+            
+            
+            
             \begin{exampleblock}{\centering{Parameter Identification}}
             \centering{Derivative-free optimization}
             \end{exampleblock}
@@ -137,7 +134,7 @@
 				\begin{block}{}
 				    \begin{center}
 				    \vskip 2mm
-					Good description of the effects of control and motion
+					Good description of the effects of control on motion
 					%\vskip
 					\hspace*\fill
 					\end{center}
@@ -148,7 +145,7 @@
 	
 	
 \begin{frame}
-    \frametitle{Physical Modeling Cont'd}
+    \frametitle{Physical Modeling}
     \vspace{-0.3cm}
     \large\textbf{How?}
     \vspace{1cm}
@@ -171,37 +168,6 @@
 		\centering{(ODE)}
 	\end{columns}
 \end{frame}
-
-
-\begin{frame}
-	\frametitle{Which color do we want to use?}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue}]
-		TUMblue
-	\end{tcolorbox}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue1}]
-		TUMblue1
-	\end{tcolorbox}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue2}]
-		TUMblue2
-	\end{tcolorbox}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue3}]
-		TUMblue3
-	\end{tcolorbox}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue4}]
-		TUMblue4
-	\end{tcolorbox}
-	\begin{tcolorbox}[width=\linewidth,colback={TUMblue5}]
-		TUMblue5
-	\end{tcolorbox}
-\end{frame}
-
-
-
-
-
-
-
-
 
 
 
@@ -248,158 +214,17 @@
 \end{frame}
 		
 
-
-   
-
-
-		
-		
-\begin{frame}
-    \frametitle{Parameter Identification Two Ways}
-%    \vspace{0.2cm}
-    \textbf{Two independent models acquired,}\newline
-    \textbf{two different computational approaches.}
-    \vspace{1cm}
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-            \begin{block}{\centering{Physical Model}}
-%                \begin{itemize}
-%                   \item{Rope properties}
-%                    \item{Lagrange Formalism}
-%                \end{itemize}
-            \end{block}
-            
-            \centering
-            $\Downarrow$
-            
-            \begin{block}{\centering{Parameter Identification}}
-%            \centering{Discretization}
-            \end{block}
-        \end{column}
-        
-        \begin{column}{0.065\textwidth}
-        \textbf{and}
-        \end{column}
-        
-        \begin{column}{0.4\textwidth}
-            \begin{exampleblock}{\centering{Blackbox Model}}
-%                \begin{itemize}
-%                    \item{Realistic model}
-%                    \item{Confidential information}
-%                \end{itemize}
-            \end{exampleblock}
-            
-            \centering
-            $\Downarrow$
-            
-            \begin{exampleblock}{\centering{Parameter Identification}}
-%            \centering{Derivative-free optimization}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-\end{frame}		
-		
-
-\begin{frame}
-    \frametitle{Parameter Identification: Physical Model}
-    \vspace{-1cm}
-    \onslide<1->
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.5\textwidth}
-            \begin{block}{\centering{Own Physical Model}}
-                
-                    \centering{Lagrange Formalism}
-%                    \small{{\begin{align*}
-%	                        &A(x,p)
-%	                \begin{pmatrix} 
-%	                \ddot{s} \\ \ddot{\theta} \\
-%	                \end{pmatrix}
-%	                = b(x,u,p)
-%                   \end{align*}}}
-%            \vspace{-0.3cm}   
-            \end{block}
-            \vspace{-0.1cm}
-            
-            \centering
-            $\Downarrow$
-            
-            \begin{block}{\centering{Parameter Identification}}
-            Discretization
-            \small{\begin{align*}
-                \min_{p} & & \frac{1}{2} \| \bar{x} - x(p) \|^2 & & \\
-            \end{align*}}
-            \vspace{-1cm}
-            \end{block}
-            \vspace{-1.5cm}
-        \end{column}
-    
-    \onslide<2>
-    \begin{column}{0.45\textwidth}
-        \begin{itemize}
-            \vspace{0.6cm}
-            \item{Information for calibration available}
-            \vspace{0.5cm}
-            \item{Runge-Kutta method}
-            \vspace{0.5cm}
-            \item{Parameter computation for}\newline{a given control and motion}
-        \end{itemize}
-    \end{column}    
-    \end{columns}
-\end{frame}        
         
         
         
-        
-        
-        
-        
-        
-\begin{frame}        
-    \frametitle{Parameter Identification: Blackbox Model}
-    
-    \onslide<2>
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.5\textwidth}
-        \begin{itemize}
-        	\vspace{-1.5cm}
-            \item{Almost no information available}
-            \vspace{0.65cm}
-            \item{Derivative-free optimization}
-            \vspace{0.65cm}
-            \item{Only a few parameters studied}
-        \end{itemize}
-        \end{column}
-    
-    
-    
-    \onslide<1->
-    \begin{column}{0.45\textwidth}
-            \begin{exampleblock}{\centering{Siemens Blackbox Model}}
-                \begin{itemize}
-                
-                \item{\textbf{Input}: Control}
-                \item{\textbf{Output}: Motion}
-                \end{itemize}
-            \end{exampleblock}
-            
-            \centering
-            $\Downarrow$
-            
-            \begin{exampleblock}{\centering{Parameter Identification}}
-            Particle Swarm, Pattern Search, Genetic Algorithm, ...
-            \end{exampleblock}
-        \end{column}
-      \end{columns}
-\end{frame}
-
-
+  
 
 \begin{frame}
 	\frametitle{Visualization: Simulink}
-	\vspace{-5cm}
+	\vspace{-7cm}
 	\begin{figure}[t]
 	\centering
-		\includegraphics[width=1\linewidth, height=1.2\linewidth]{img/Simulink_Screenshot1}
+		\includegraphics[width=1\linewidth, height=1.5\linewidth]{img/Simulink_Screenshot1}
 	\end{figure}
 	
 	
@@ -414,7 +239,7 @@
 \begin{frame}[t]
 \frametitle{Visualization Example}
 
-Same parameters, different load weights
+Same parameters except different load weights
 \vspace{0.5cm}
 
 \begin{columns}
@@ -429,6 +254,7 @@ Same parameters, different load weights
   addresource= videos/traj_x_095p.mp4,
   flashvars={flv=videos/traj_x_095p.mp4 & autoplay=1 & loop=1}
 ]{}{player_flv_maxi.swf}
+\centering{Light load}
 \end{column}
 
 
@@ -446,6 +272,7 @@ Same parameters, different load weights
   addresource= videos/traj_x_105p.mp4,
   flashvars={flv=videos/traj_x_105p.mp4 & autoplay=1 & loop =1}
 ]{}{player_flv_maxi.swf}
+\centering{Heavy load}
 \end{column}
 
 \end{columns}
