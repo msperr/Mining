@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Project_Overview.tex
+Document=tex\Physical_Model.tex
 
 [Frame1_View0,0]
-TopLine=369
-Cursor=9370
+TopLine=0
+Cursor=393
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Physical_Model.tex
+Document=tex\Visualization.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=393
+Cursor=0
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Visualization.tex
+Document=tex\Parameter_Optimization.tex
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=0
+TopLine=137
+Cursor=4966
 
 [Frame4]
 Flags=0
@@ -86,11 +86,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Parameter_Optimization.tex
+Document=tex\Project_Overview.tex
 
 [Frame4_View0,0]
-TopLine=137
-Cursor=4966
+TopLine=429
+Cursor=11193
 
 [SessionInfo]
 FrameCount=5
