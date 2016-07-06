@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=tex\Project_Overview.tex
 
 [Frame1_View0,0]
-TopLine=99
-Cursor=2758
+TopLine=369
+Cursor=9370
 
 [Frame2]
 Flags=0
