@@ -1,32 +1,69 @@
 \section{Physical Model}
 
-\begin{frame}
-	\frametitle{Lagrange Formalism}
-	\onslide<1->
-	Method to describe dynamics of an accelerated system\\
-	\vspace{0.45cm}
-	\begin{columns}
-		\column{.5\linewidth}
-		\column{.55\linewidth}
-		%\begin{small}
-		\begin{tabular}{ll}
-			& \\
-			T & kinetic energy\\
-			V & potentials\\
-		\end{tabular}
-		\onslide<2->
-		\begin{tabular}{ll}
-			F & non-conservative external forces\\
-		\end{tabular}
-		\onslide<3->
-		\begin{tabular}{ll}
-			r & points of actions of forces F\\ %position vector
-			q & free variables\\
-			Q & generalized forces\\
-		\end{tabular}
-		%\end{small}
-	\end{columns}
-\end{frame}
+%\begin{frame}
+	%\frametitle{Lagrange Formalism}
+	%\onslide<1->
+	%Method to describe dynamics of an accelerated system\\
+	%\vspace{0.45cm}
+	%\begin{columns}
+		%\column{.5\linewidth}
+		%\column{.55\linewidth}
+		%%\begin{small}
+		%\begin{tabular}{ll}
+			%& \\
+			%T & kinetic energy\\
+			%V & potentials\\
+		%\end{tabular}
+		%\onslide<2->
+		%\begin{tabular}{ll}
+			%F & non-conservative external forces\\
+		%\end{tabular}
+		%\onslide<3->
+		%\begin{tabular}{ll}
+			%r & points of actions of forces F\\ %position vector
+			%q & free variables\\
+			%Q & generalized forces\\
+		%\end{tabular}
+		%%\end{small}
+	%\end{columns}
+%\end{frame}
+
+%\begin{frame}
+	%\setbeamertemplate{blocks}[rounded][shadow=false]
+	%\frametitle{Lagrange Formalism}
+	%Method to describe dynamics of an accelerated system\\
+	%\vspace{0.45cm}
+	%\begin{columns}
+		%\column{.02\linewidth}
+		%\column{.43\linewidth}
+		%\centering
+		%\begin{block}{}
+			%\vskip -3mm
+			%\begin{align*}
+				%&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
+				%\frac{\partial T}{\partial q_i} +
+				%\frac{\partial V}{\partial q_i}
+				%= Q_i \\
+				%& Q = \left(\frac{\partial r}{\partial q}\right)^T F
+			%\end{align*}
+			%\vskip -3mm
+			%\hspace*\fill
+		%\end{block}
+		%\column{.05\linewidth}
+		%\column{.55\linewidth}
+		%%\begin{small}
+		%\begin{tabular}{ll}
+			%& \\
+			%T & kinetic energy\\
+			%V & potentials\\
+			%F & non-conservative external forces\\
+			%r & points of actions of forces F\\ %position vector
+			%q & free variables\\
+			%Q & generalized forces\\
+		%\end{tabular}
+		%%\end{small}
+	%\end{columns}
+%\end{frame}	
 
 \begin{frame}
 	\setbeamertemplate{blocks}[rounded][shadow=false]
@@ -37,6 +74,7 @@
 		\column{.02\linewidth}
 		\column{.43\linewidth}
 		\centering
+		\onslide<4->
 		\begin{block}{}
 			\vskip -3mm
 			\begin{align*}
@@ -52,11 +90,18 @@
 		\column{.05\linewidth}
 		\column{.55\linewidth}
 		%\begin{small}
+		\onslide<1->
 		\begin{tabular}{ll}
 			& \\
 			T & kinetic energy\\
 			V & potentials\\
+		\end{tabular}
+		\onslide<2->
+		\begin{tabular}{ll}
 			F & non-conservative external forces\\
+		\end{tabular}
+		\onslide<3->
+		\begin{tabular}{ll}
 			r & points of actions of forces F\\ %position vector
 			q & free variables\\
 			Q & generalized forces\\

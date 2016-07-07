@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=39
-Cursor=1238
+TopLine=24
+Cursor=645
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Physical_Model.tex
+Document=tex\Project_Overview.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=393
+TopLine=225
+Cursor=5219
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Visualization.tex
+Document=tex\Physical_Model.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=0
+TopLine=39
+Cursor=1687
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Parameter_Optimization.tex
+Document=tex\Parameter_Identification_Physical_Model.tex
 
 [Frame3_View0,0]
-TopLine=137
-Cursor=4966
+TopLine=71
+Cursor=1583
 
 [Frame4]
 Flags=0
@@ -86,13 +86,13 @@ NormalPos.top=26
 NormalPos.right=1596
 NormalPos.bottom=553
 Class=LaTeXView
-Document=tex\Project_Overview.tex
+Document=tex\Parameter_Optimization.tex
 
 [Frame4_View0,0]
-TopLine=429
-Cursor=11193
+TopLine=14
+Cursor=956
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=0
+ActiveFrame=1
 

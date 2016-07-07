@@ -32,7 +32,7 @@
 
 \begin{frame}[c]
 	\frametitle{Trajectories}
-	\textbf{Input:} Joystick commands for Up/Down and Forth/Back \\
+	\textbf{Input:} Joystick commands for Up/Down and Back/Forth \\
 	\vspace{.4cm}
 	\textbf{Output:} Position of the shovel
 	\vspace{-.3cm}
@@ -146,14 +146,62 @@
 	\end{itemize}
 	\vspace{.5cm}
 	
-	\onslide<2->
 	{\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{l|lcrll}
-		                    & value      & evaluations & time   & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
-		\hline
-		Particle Swarm      & $10^{-12}$ & $2200$      & 6 min  & $10^{-1.0}$                           & $10^{-3.8}$                            \\
-		Pattern Search      & $10^{-11}$ & $6500$      & 17 min & $10^{-1.3}$                           & $10^{-3.7}$                            \\
-		Genetic Algorithm   & $10^{-4}$  & $5500$      & 14 min & $10^{-0.5}$                           & $10^{-1.0}$                            \\
-		Simulated Annealing & $10^{-3}$  & $4200$      & 11 min & $10^{-0.3}$                           & $10^{-0.6}$                            \\
-	\end{tabular}}
+	\begin{overprint}
+		\onslide<2>
+		\begin{tabular}{l|lcrll}
+													& value & evaluations & time & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
+			\hline
+			Particle Swarm      & \cellcolor{white} $10^{-12}$  & \cellcolor{white} $2200$      & \cellcolor{white} 6 min
+													& \cellcolor{white} $10^{-1.0}$ & \cellcolor{white} $10^{-3.8}$                            \\
+			Pattern Search      & \cellcolor{white} $10^{-11}$  & \cellcolor{white} $6500$      & \cellcolor{white} 17 min
+													& \cellcolor{white} $10^{-1.3}$ & \cellcolor{white} $10^{-3.7}$                            \\
+			Genetic Algorithm   & \cellcolor{white} $10^{-4}$   & \cellcolor{white} $5500$      & \cellcolor{white} 14 min
+													& \cellcolor{white} $10^{-0.5}$ & \cellcolor{white} $10^{-1.0}$                            \\
+			Simulated Annealing & \cellcolor{white} $10^{-3}$   & \cellcolor{white} $4200$      & \cellcolor{white} 11 min
+													& \cellcolor{white} $10^{-0.3}$ & \cellcolor{white} $10^{-0.6}$                            \\
+		\end{tabular}
+		
+		\onslide<3>
+		\begin{tabular}{l|lcrll}
+													& value & evaluations & time & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
+			\hline
+			Particle Swarm      & \cellcolor{TUMblue4} $10^{-12}$  & \cellcolor{white} $2200$      & \cellcolor{white} 6 min
+													& \cellcolor{white} $10^{-1.0}$    & \cellcolor{white} $10^{-3.8}$                            \\
+			Pattern Search      & \cellcolor{TUMblue4} $10^{-11}$  & \cellcolor{white} $6500$      & \cellcolor{white} 17 min
+													& \cellcolor{white} $10^{-1.3}$    & \cellcolor{white} $10^{-3.7}$                            \\
+			Genetic Algorithm   & \cellcolor{white} $10^{-4}$      & \cellcolor{white} $5500$      & \cellcolor{white} 14 min
+													& \cellcolor{white} $10^{-0.5}$    & \cellcolor{white} $10^{-1.0}$                            \\
+			Simulated Annealing & \cellcolor{white} $10^{-3}$      & \cellcolor{white} $4200$      & \cellcolor{white} 11 min
+													& \cellcolor{white} $10^{-0.3}$    & \cellcolor{white} $10^{-0.6}$                            \\
+		\end{tabular}
+		
+		\onslide<4>
+		\begin{tabular}{l|lcrll}
+													& value & evaluations & time & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
+			\hline
+			Particle Swarm      & \cellcolor{white} $10^{-12}$  & \cellcolor{TUMblue4} $2200$      & \cellcolor{TUMblue4} 6 min
+													& \cellcolor{white} $10^{-1.0}$ & \cellcolor{white} $10^{-3.8}$                            \\
+			Pattern Search      & \cellcolor{white} $10^{-11}$  & \cellcolor{TUMblue5} $6500$      & \cellcolor{TUMblue5} 17 min
+													& \cellcolor{white} $10^{-1.3}$ & \cellcolor{white} $10^{-3.7}$                            \\
+			Genetic Algorithm   & \cellcolor{white} $10^{-4}$   & \cellcolor{white} $5500$         & \cellcolor{white} 14 min
+													& \cellcolor{white} $10^{-0.5}$ & \cellcolor{white} $10^{-1.0}$                            \\
+			Simulated Annealing & \cellcolor{white} $10^{-3}$   & \cellcolor{white} $4200$         & \cellcolor{white} 11 min
+													& \cellcolor{white} $10^{-0.3}$ & \cellcolor{white} $10^{-0.6}$                            \\
+		\end{tabular}
+		
+		\onslide<5>
+		\begin{tabular}{l|lcrll}
+													& value & evaluations & time & dev\raisebox{-.5ex}{\scriptsize{max}} & dev\raisebox{-.5ex}{\scriptsize{mean}} \\
+			\hline
+			Particle Swarm      & \cellcolor{white} $10^{-12}$     & \cellcolor{white} $2200$      & \cellcolor{white} 6 min
+													& \cellcolor{TUMblue4} $10^{-1.0}$ & \cellcolor{TUMblue5} $10^{-3.8}$                            \\
+			Pattern Search      & \cellcolor{white} $10^{-11}$     & \cellcolor{white} $6500$      & \cellcolor{white} 17 min
+													& \cellcolor{TUMblue4} $10^{-1.3}$ & \cellcolor{TUMblue5} $10^{-3.7}$                            \\
+			Genetic Algorithm   & \cellcolor{white} $10^{-4}$      & \cellcolor{white} $5500$      & \cellcolor{white} 14 min
+													& \cellcolor{white} $10^{-0.5}$    & \cellcolor{white} $10^{-1.0}$                            \\
+			Simulated Annealing & \cellcolor{white} $10^{-3}$      & \cellcolor{white} $4200$      & \cellcolor{white} 11 min
+													& \cellcolor{white} $10^{-0.3}$    & \cellcolor{white} $10^{-0.6}$                            \\
+		\end{tabular}
+	\end{overprint}}
 \end{frame}
