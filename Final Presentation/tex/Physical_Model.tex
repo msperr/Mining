@@ -125,24 +125,24 @@
 	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Physical Model of Excavator}
-	
-	%	invariant under transformation of coordinates $\rightarrow$ appropriate choice of 	coordinate system
-	
-	%first fix coordinate system $\rightarrow$ consider positions vectors, coordinates of mass points,... in this system\\
-	
-	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
-	
-	\begin{columns}
-		\column{.6\linewidth}
-		\centering
-		\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
-		\column{.4\linewidth}
-		coordinate system
-	\end{columns}
-	
-\end{frame}
+%\begin{frame}
+%	\frametitle{Physical Model of Excavator}
+%	
+%	%	invariant under transformation of coordinates $\rightarrow$ appropriate choice of 	coordinate system
+%	
+%	%first fix coordinate system $\rightarrow$ consider positions vectors, coordinates of mass points,... in this system\\
+%	
+%	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+%	
+%	\begin{columns}
+%		\column{.6\linewidth}
+%		\centering
+%		\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_coordinates2}
+%		\column{.4\linewidth}
+%		coordinate system
+%	\end{columns}
+%	
+%\end{frame}
 
 \begin{frame}
 	\frametitle{Physical Model of Excavator}
@@ -167,39 +167,39 @@
 	
 \end{frame}
 
-\begin{frame}
-	\frametitle{Physical Model of Excavator}
-	\onslide<1->
-	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
-	\begin{columns}
-		\column{.6\linewidth}
-		\centering
-		\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
-		\column{.4\linewidth}
-		
-		movable centers of gravity of
-		\begin{itemize}
-			\item{shovel $M_1$}
-			\item{arm $M_2$}\\
-		\end{itemize}
-		\onslide<2->
-		
-		\begin{small}
-			\begin{align*}
-				&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
-				\frac{\partial T}{\partial q_i} +
-				\frac{\partial V}{\partial q_i}
-				= Q_i \\
-				& Q = \left(\frac{\partial r}{\partial q}\right)^T F\\
-			\end{align*}
-		\end{small}
-	\end{columns}
-	
-	%where are the point masses? only consider point masses which can be moved i.e. depend on configuration $\rightarrow$ derivative wrt degrees of freedom\\
-	%shovel and center of mass of side arm\\
-	%other arm is fixed and cant be moved
-	
-\end{frame}
+%\begin{frame}
+%	\frametitle{Physical Model of Excavator}
+%	\onslide<1->
+%	%\includegraphics[trim=22cm 5cm 2cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+%	\begin{columns}
+%		\column{.6\linewidth}
+%		\centering
+%		\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_mass2}
+%		\column{.4\linewidth}
+%		
+%		movable centers of gravity of
+%		\begin{itemize}
+%			\item{shovel $M_1$}
+%			\item{arm $M_2$}\\
+%		\end{itemize}
+%		\onslide<2->
+%		
+%		\begin{small}
+%			\begin{align*}
+%				&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
+%				\frac{\partial T}{\partial q_i} +
+%				\frac{\partial V}{\partial q_i}
+%				= Q_i \\
+%				& Q = \left(\frac{\partial r}{\partial q}\right)^T F\\
+%			\end{align*}
+%		\end{small}
+%	\end{columns}
+%	
+%	%where are the point masses? only consider point masses which can be moved i.e. depend on configuration $\rightarrow$ derivative wrt degrees of freedom\\
+%	%shovel and center of mass of side arm\\
+%	%other arm is fixed and cant be moved
+%	
+%\end{frame}
 
 %\begin{frame}
 %\frametitle{Kinetic Energy T}
@@ -270,12 +270,23 @@
 
 \begin{frame}
 	\frametitle{Potential Energy}
+	\onslide<1->
 	\begin{columns}
 		\column{.6\linewidth}
 		\centering
 		\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_Only}
 		\column{.4\linewidth}
-		gravitational potential energy
+		gravitational potential energy\\
+		\onslide<2->
+		\begin{small}
+		\begin{align*}
+			&\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) -
+			\frac{\partial T}{\partial q_i} +
+			\frac{\partial V}{\partial q_i}
+			= Q_i \\
+			& Q = \left(\frac{\partial r}{\partial q}\right)^T F\\
+		\end{align*}
+	    \end{small}
 	\end{columns}
 \end{frame}
 
@@ -343,20 +354,20 @@
 %\end{tabular}
 %\end{frame}
 
-\begin{frame}
-	\frametitle{Physical Model of Excavator}
-	
-	Assumptions to the model:\\
-	\vspace{0.6cm}
-	\begin{itemize}
-		\item no mass for the ropes
-		\item shovel as point mass % attached on the side arm
-		\item no slack / friction between ropes and cable reels
-		% ropes and cable reel move with same velocity
-		% only bearing friction (friction within cable reels)
-	\end{itemize}
-	
-\end{frame}
+%\begin{frame}
+%	\frametitle{Physical Model of Excavator}
+%	
+%	Assumptions to the model:\\
+%	\vspace{0.6cm}
+%	\begin{itemize}
+%		\item no mass for the ropes
+%		\item shovel as point mass % attached on the side arm
+%		\item no slack / friction between ropes and cable reels
+%		% ropes and cable reel move with same velocity
+%		% only bearing friction (friction within cable reels)
+%	\end{itemize}
+%	
+%\end{frame}
 
 \begin{frame}
 	\frametitle{Lagrange Formalism}
