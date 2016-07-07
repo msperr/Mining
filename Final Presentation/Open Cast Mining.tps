@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=24
-Cursor=645
+TopLine=0
+Cursor=6
 
 [Frame1]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=tex\Physical_Model.tex
 
 [Frame2_View0,0]
-TopLine=39
-Cursor=1687
+TopLine=0
+Cursor=1962
 
 [Frame3]
 Flags=0
@@ -94,5 +94,5 @@ Cursor=956
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=1
+ActiveFrame=0
 
