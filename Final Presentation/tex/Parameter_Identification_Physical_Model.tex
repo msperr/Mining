@@ -91,22 +91,22 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Problem Formulation}
-    Natural approach: Optimal Control Problem
-    \begin{align*}
-        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
-        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
-                            & & p & \geq 0 & & \\
-    \end{align*}
-
-    \begin{tabular}{ll}
-        state & $ x = (s,\theta,\dot{s},\dot{\theta})^T $ \\
-        parameters & $ p = (p_1,...,p_k)^T $ \\
-        control & $ \bar{u} = (\tau_1,\tau_2)^T $ \\
-        desired motion & $\bar{x}$ \\
-    \end{tabular}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Problem Formulation}
+%    Natural approach: Optimal Control Problem
+%    \begin{align*}
+%        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
+%        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
+%                            & & p & \geq 0 & & \\
+%    \end{align*}
+%
+%    \begin{tabular}{ll}
+%        state & $ x = (s,\theta,\dot{s},\dot{\theta})^T $ \\
+%        parameters & $ p = (p_1,...,p_k)^T $ \\
+%        control & $ \bar{u} = (\tau_1,\tau_2)^T $ \\
+%        desired motion & $\bar{x}$ \\
+%    \end{tabular}
+%\end{frame}
 
 %\begin{frame}
 %    \frametitle{Problem Formulation}
@@ -133,45 +133,30 @@
 %    \end{itemize}
 %\end{frame}
 
-\begin{frame}
-    \frametitle{Problem Formulation}
-
-    \onslide<1->
-    Original Problem
-    \begin{align*}
-        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
-        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
-                            & & p & \geq 0 & & \\
-    \end{align*}
-
-    \onslide<2->
-    Set $x \leftarrow \bar{x}$
-
-    \onslide<3>
-    Reinterpreted Problem
-    \begin{align*}
-        \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
-        \operatorname{s.t.} & & p & \geq 0 & & \\
-    \end{align*}
-\end{frame}
-
-\begin{frame}
-    \begin{align*}
-        \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
-        \operatorname{s.t.} & & p & \geq 0 & & \\
-    \end{align*}
-    %\begin{align*}
-    %    & \Phi_n(x,\bar{u},p) = x_{n+1} - \Psi(x_n,\bar{u}_n,p)   \quad \forall n = 0,\ldots,m-1 \\
-    %\end{align*}
-    \begin{itemize}
-        \item{$\bar{x}$ solves ODE for $\bar{p}$}
-        \item{$\Phi(\bar{x},\bar{u},\bar{p}) \rightarrow 0$ for discretization $m \rightarrow \infty$}
-        \item{number of parameters fix}
-    \end{itemize}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Problem Formulation}
+%
+%    \onslide<1->
+%    Original Problem
+%    \begin{align*}
+%        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
+%        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
+%                            & & p & \geq 0 & & \\
+%    \end{align*}
+%
+%    \onslide<2->
+%    Set $x \leftarrow \bar{x}$
+%
+%    \onslide<3>
+%    Reinterpreted Problem
+%    \begin{align*}
+%        \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
+%        \operatorname{s.t.} & & p & \geq 0 & & \\
+%    \end{align*}
+%\end{frame}
 
 \begin{frame}
-    \frametitle{Comparison of the Approaches}
+    \frametitle{Possible Approaches}
 
     \begin{columns}[t]
         \column{.5\linewidth}
@@ -191,12 +176,24 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{Problem Formulation}
+    \begin{align*}
+        \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
+        \operatorname{s.t.} & & p & \geq 0 & & \\
+    \end{align*}
+    \begin{itemize}
+        \item{$\bar{x}$ solves ODE for $\bar{u},\bar{p}$}
+        \item{$\Phi(\bar{x},\bar{u},\bar{p}) \rightarrow 0$ for discretization $m \rightarrow \infty$}
+        \item{number of parameters fix}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
     \frametitle{Example Instance}
     \begin{itemize}
         \item{$[0,T] = [0,14s]$}
         \item{1500 time steps}
         \item{$p_0 \in [0.8  \bar{p}, 1.2  \bar{p}]$}
-        \item{$x(p)$ solution of ODE for given $p$}
         \item{internally 5 trajectories in parallel}
     \end{itemize}
 
@@ -204,19 +201,27 @@
 
 \begin{frame}
     \frametitle{Results}
-    \begin{columns}[t]
-        \column{.5\linewidth}
-            \begin{figure}
-                \centering
-                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotPhi}
-            \end{figure}
-        \column{.5\linewidth}
-            \begin{figure}
-                \centering
-                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotX}
-            \end{figure}
-    \end{columns}
+    \begin{figure}
+        \centering
+        \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=0.6\linewidth]{img/convPlotPhi}
+    \end{figure}
 \end{frame}
+
+%\begin{frame}
+%    \frametitle{Results}
+%    \begin{columns}[t]
+%        \column{.5\linewidth}
+%            \begin{figure}
+%                \centering
+%                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotPhi}
+%            \end{figure}
+%        \column{.5\linewidth}
+%            \begin{figure}
+%                \centering
+%                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotX}
+%            \end{figure}
+%    \end{columns}
+%\end{frame}
 
 \begin{frame}
     \frametitle{Results}
@@ -239,18 +244,18 @@
     \end{center}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Results}
-    \begin{columns}[t]
-        \column{.5\linewidth}
-            \begin{figure}
-                \centering
-                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotTrajS}
-            \end{figure}
-        \column{.5\linewidth}
-            \begin{figure}
-                \centering
-                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotTrajT}
-            \end{figure}
-    \end{columns}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Results}
+%    \begin{columns}[t]
+%        \column{.5\linewidth}
+%            \begin{figure}
+%                \centering
+%                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotTrajS}
+%            \end{figure}
+%        \column{.5\linewidth}
+%            \begin{figure}
+%                \centering
+%                \includegraphics[trim=4cm 9cm 4cm 8.5cm, clip=true, width=\linewidth]{img/convPlotTrajT}
+%            \end{figure}
+%    \end{columns}
+%\end{frame}
