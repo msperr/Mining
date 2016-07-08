@@ -56,54 +56,6 @@
 
 
 
-\begin{frame}
-    \frametitle{Procedure}
-    \onslide<1->
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-            \begin{block}{\centering{Physical Model}}
-                \begin{itemize}
-                    \item{Rope properties}
-                    \item{Lagrange Formalism}
-                \end{itemize}
-            \end{block}
-            
-            \centering
-            $\Downarrow$
-
-            
-            \begin{block}{\centering{Parameter Identification}}
-            \centering{Discretization + Optimization}
-            \end{block}
-        \end{column}
-        
-    \onslide<2>
-        
-        \begin{column}{0.065\textwidth}
-        \textbf{and}
-        \end{column}
-        
-        \begin{column}{0.4\textwidth}
-            \begin{exampleblock}{\centering{Blackbox Model}}
-                \begin{itemize}
-                    \item{Realistic model}
-                    \item{Confidential information}
-                \end{itemize}
-            \end{exampleblock}
-            
-            \centering
-            $\Downarrow$
-            
-            
-            
-            
-            
-            \begin{exampleblock}{\centering{Parameter Identification}}
-            \centering{Derivative-free optimization}
-            \end{exampleblock}
-        \end{column}
-    \end{columns}
-\end{frame}
 
 
 
@@ -119,24 +71,24 @@
 			\column{.3\textwidth}
 				\centering
 		    	\begin{block}{}
-		    	   \begin{center}
+		    	    \begin{center}
 		    	    \vskip 4mm
-								{\large Building an accurate model}
-							\vskip 3mm
-							\hspace*\fill
-						\end{center}
-					\end{block}
+					{\large Building an accurate model}
+					\vskip 3mm
+					\hspace*\fill
+					\end{center}
+				\end{block}
 			\column{.1\textwidth}
 				\centering
 				\Huge{$\Rightarrow$}
 			\column{.3\textwidth}
 				\centering
-					\begin{block}{}
+				\begin{block}{}
 				    \begin{center}
-							\vskip 2mm
-								Good description of the effects of control on motion
-							\vskip 0mm
-						\hspace*\fill
+				    \vskip 2mm
+					Good description of the effects of control on motion
+					%\vskip
+					\hspace*\fill
 					\end{center}
 				\end{block}
 		\end{columns}
@@ -189,24 +141,24 @@
 			\column{.3\textwidth}
 				\centering
 		    	\begin{block}{}
-		    	  \begin{center}
-							\vskip 4mm
-							Accurate and realistic parameters
-							\vskip 3mm
-							\hspace*\fill
-						\end{center}
+		    	    \begin{center}
+		    	    \vskip 4mm
+					 Accurate and realistic parameters
+					\vskip 3mm
+					\hspace*\fill
+					\end{center}
 				\end{block}
 			\column{.1\textwidth}
 				\centering
 				\Huge{$\Rightarrow$}
 			\column{.3\textwidth}
 				\centering
-					\begin{block}{}
+				\begin{block}{}
 				    \begin{center}
 				    \vskip 2mm
-						Better prediction and planning of motion
-						\vskip 0mm
-						\hspace*\fill
+					Better prediction and planning of motion
+					%\vskip
+					\hspace*\fill
 					\end{center}
 				\end{block}
 		\end{columns}
@@ -214,7 +166,98 @@
 \end{frame}
 		
 
+\begin{frame}[t]
+\frametitle{Visual Examples}
+
+Same parameters except different load weights
+\vspace{0.5cm}
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+
+
+\includemedia[
+  label      = AA,
+  width      = 50mm,
+  height     = 50mm,
+  activate   = pageopen,
+  addresource= videos/traj_x_095p.mp4,
+  flashvars={flv=videos/traj_x_095p.mp4 & autoplay=1 & loop=1}
+]{}{player_flv_maxi.swf}
+\centering{Light load}
+\end{column}
+
+
+\begin{column}{0.055\textwidth}
+	\textbf{vs}
+\end{column}
+
+
+\begin{column}{0.4\textwidth}
+\includemedia[
+  label      = BB,
+  width      = 50mm,
+  height     = 50mm,
+  activate   = pageopen,
+  addresource= videos/traj_x_105p.mp4,
+  flashvars={flv=videos/traj_x_105p.mp4 & autoplay=1 & loop =1}
+]{}{player_flv_maxi.swf}
+\centering{Heavy load}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Procedure}
+    \onslide<1->
+    \begin{columns}[onlytextwidth]
+        \begin{column}{0.4\textwidth}
+            \begin{block}{\centering{Physical Model}}
+         
+                    \centering{Lagrange Formalism}
         
+            \end{block}
+            
+            \centering
+            $\Downarrow$
+
+            
+            \begin{block}{\centering{Parameter Identification}}
+            \centering{Discretization + Optimization}
+            \end{block}
+        \end{column}
+        
+    \onslide<2>
+        
+        \begin{column}{0.065\textwidth}
+        \textbf{and}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            \begin{exampleblock}{\centering{Blackbox Model}}
+                \begin{itemize}
+                    \item{Realistic model}
+                    \item{Confidential information}
+                \end{itemize}
+            \end{exampleblock}
+            
+            \centering
+            $\Downarrow$
+            
+            
+            
+            
+            
+            \begin{exampleblock}{\centering{Parameter Identification}}
+            \centering{Derivative-free optimization}
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}        
         
         
   
@@ -236,48 +279,7 @@
 
 
 
-\begin{frame}[t]
-\frametitle{Visualization Example}
 
-Same parameters except different load weights
-\vspace{0.5cm}
-
-\begin{columns}
-\begin{column}{0.45\textwidth}
-
-
-\includemedia[
-  label      = BB,
-  width      = 50mm,
-  height     = 50mm,
-  activate   = pageopen,
-  addresource= videos/traj_x_095p.mp4,
-  flashvars={flv=videos/traj_x_095p.mp4 & autoplay=1 & loop=1}
-]{}{player_flv_maxi.swf}
-\centering{Light load}
-\end{column}
-
-
-\begin{column}{0.055\textwidth}
-	\textbf{vs}
-\end{column}
-
-
-\begin{column}{0.4\textwidth}
-\includemedia[
-  label      = CC,
-  width      = 50mm,
-  height     = 50mm,
-  activate   = pageopen,
-  addresource= videos/traj_x_105p.mp4,
-  flashvars={flv=videos/traj_x_105p.mp4 & autoplay=1 & loop =1}
-]{}{player_flv_maxi.swf}
-\centering{Heavy load}
-\end{column}
-
-\end{columns}
-
-\end{frame}
    
 
 
