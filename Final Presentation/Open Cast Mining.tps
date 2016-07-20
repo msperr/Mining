@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=Open Cast Mining.tex
 
 [Frame0_View0,0]
-TopLine=0
+TopLine=15
 Cursor=6
 
 [Frame1]
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=tex\Project_Overview.tex
 
 [Frame1_View0,0]
-TopLine=225
-Cursor=5219
+TopLine=138
+Cursor=3683
 
 [Frame2]
 Flags=0
