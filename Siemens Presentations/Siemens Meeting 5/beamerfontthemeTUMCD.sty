@@ -1,0 +1,126 @@
+\mode<presentation>
+
+% Ist nötig, da (zumindest bei mir) die Standardoption sonst nicht funktioniert.
+\def\fontheadfoot{phv}%
+
+% Use normal font (=Helvetica) in head/foot
+\newcommand{\fontheadfoot@empty}{%
+	\def\fontheadfoot{phv}%
+}%
+
+% Use TUM Helvetica in head/foot
+\newcommand{\fontheadfoot@TUMhelv}{%
+	\def\fontheadfoot{lhv}%
+}%
+
+% Whicht font to use in head/foot: "empty", "TUMhelv"
+\DeclareOptionBeamer{fontheadfoot}[empty]{%
+	\csname fontheadfoot@#1\endcsname%
+}%
+
+\DeclareOptionBeamer{biggest}{\def\beamer@size{{size14.clo}}\beamer@centeredfalse}
+
+\ProcessOptionsBeamer%
+
+%\setbeamerfont{normal text}{} % ignored currently
+%\setbeamerfont{alerted text}{}
+%\setbeamerfont{example text}{}
+%
+%\setbeamerfont{structure}{}
+%\setbeamerfont{tiny structure}{}
+%
+%\setbeamerfont{title}{}
+\setbeamerfont{title in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{title in sidebar}{}
+%
+%\setbeamerfont{subtitle}{}
+%
+%\setbeamerfont{author}{}
+\setbeamerfont{author in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{author in sidebar}{}
+%
+%\setbeamerfont{institute}{}
+\setbeamerfont{institute in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{institute in sidebar}{}
+%
+%\setbeamerfont{date}{}
+\setbeamerfont{date in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{date in sidebar}{}
+%
+%\setbeamerfont{part name}{}
+%\setbeamerfont{part title}{}
+%
+%\setbeamerfont{section in toc}{}
+%\setbeamerfont{section in toc shaded}{}
+\setbeamerfont{section in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{section in sidebar}{}
+%\setbeamerfont{section number projected}{}
+%
+%\setbeamerfont{subsection in toc}{}
+%\setbeamerfont{subsection in toc shaded}{}
+%\setbeamerfont{subsection in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{subsection in sidebar}{}
+%
+%\setbeamerfont{subsubsection in toc}{}
+%\setbeamerfont{subsubsection in toc shaded}{}
+\setbeamerfont{subsubsection in head/foot}{family*=\fontheadfoot}
+%\setbeamerfont{subsubsection in sidebar}{}
+%
+%\setbeamerfont{headline}{}
+%\setbeamerfont{footline}{}
+%
+%\setbeamerfont{sidebar}{}
+%\setbeamerfont{sidebar left}{}
+%\setbeamerfont{sidebar right}{}
+%
+%\setbeamerfont{frametitle}{}
+%\setbeamerfont{framesubtitle}{}
+%
+%\setbeamerfont{caption}{}
+%\setbeamerfont{caption name}{}
+%
+%\setbeamerfont{button}{}
+%
+%\setbeamerfont{block body}{}
+%\setbeamerfont{block body alerted}{}
+%\setbeamerfont{block body example}{}
+%\setbeamerfont{block title}{}
+%\setbeamerfont{block title alerted}{}
+%\setbeamerfont{block title example}{}
+%
+%\setbeamerfont{item}{}
+%\setbeamerfont{subitem}{}
+%\setbeamerfont{subsubitem}{}
+%
+%\setbeamerfont{item projected}{}
+%\setbeamerfont{subitem projected}{}
+%\setbeamerfont{subsubitem projected}{}
+%
+%\setbeamerfont{itemize item}{}
+%\setbeamerfont{itemize subitem}{}
+%\setbeamerfont{itemize subsubitem}{}
+%
+%\setbeamerfont{enumerate item}{}
+%\setbeamerfont{enumerate subitem}{}
+%\setbeamerfont{enumerate subsubitem}{}
+%
+%\setbeamerfont{itemize/enumerate body}{}
+%\setbeamerfont{itemize/enumerate subbody}{}
+%\setbeamerfont{itemize/enumerate subsubbody}{}
+%
+%
+%\setbeamerfont{description item}{}
+%
+%\setbeamerfont{projected text}{}
+%
+%\setbeamerfont{abstract}{}
+%\setbeamerfont{abstract title}{}
+%
+%\setbeamerfont{verse}{}
+%
+%\setbeamerfont{quotation}{}
+%\setbeamerfont{quote}{}
+%
+%\setbeamerfont{note page}{}
+
+\mode<all>

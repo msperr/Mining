@@ -1,0 +1,65 @@
+\usepackage{tumcolors}
+% Normalen
+\setbeamercolor{structure}{fg=TUMblue2, bg=white}
+\setbeamercolor{text}{fg=black, bg=white}
+\setbeamercolor{elements}{fg=TUMgray2, bg=white}
+% \setbeamercolor{normalred}{fg=dark red}
+% \setbeamercolor{normalorange}{fg=orange}
+% \setbeamercolor{normalblue}{fg=TUMblue2}
+% \setbeamercolor{normalgreen}{fg=green}
+% \setbeamercolor{normalgray}{use=normalbg,fg=TUMgray2}
+% \setbeamercolor{normalwhite}{fg=white}
+% \setbeamercolor{normalbg}{bg=white}
+
+
+% Paletten
+\setbeamercolor{palette primary}{fg=TUMblue2,bg=white}%
+\setbeamercolor{palette secondary} {fg=TUMblue2, bg=white}%
+%\setbeamercolor{palette tertiary} {fg=TUMblue4,bg=white}%
+%\setbeamercolor{palette quaternary} {fg=TUMblue5,bg=white}%
+
+
+% Hintergrund
+\setbeamercolor{background canvas}{parent=text}
+
+% Textfarben
+\setbeamercolor{normal text}{parent=text}
+\setbeamercolor{normal background}{parent=text}
+\setbeamercolor{inverted text}{fg=white}
+\setbeamercolor{alerted text}{fg=red}
+\setbeamercolor{example text}{parent=text, fg=black}
+
+% Titel
+\setbeamercolor{title}{parent=palette primary}
+\setbeamercolor{titlelike}{parent=palette primary}
+
+% Strukturierungselemente
+\setbeamercolor{enumerate item}{parent=structure}%
+\setbeamercolor{itemize item}{parent=structure}%
+
+% Bloecke
+\setbeamercolor{block title}{fg=white, bg=TUMblue2}
+\setbeamercolor{block body}
+  {use={block title,normal background}, bg=TUMgray1!60}
+\setbeamercolor{block title alerted}
+  {parent=block title, use={block title}, bg=red}
+\setbeamercolor{block body alerted}
+  {use={block title alerted ,normal background}, 
+   bg=block title alerted.bg!25!normal background.bg}
+\setbeamercolor{block title example}
+  {parent=example text,use={example text},bg=green, fg=white}
+\setbeamercolor{block body example}
+ {parent=example text,use={example text},bg=light green!80}
+
+% Kopf / Fuss
+\setbeamercolor{title in head}{parent=structure}
+\setbeamercolor{title in head/foot}{parent=structure, bg=black}
+\setbeamercolor{date in head/foot}{parent=structure}
+\setbeamercolor{institute in head/foot}{parent=structure, fg=TUMblue}
+\setbeamercolor{section in head/foot}{parent=structure}
+\setbeamercolor{author in head/foot}{parent=structure}
+\setbeamercolor{framenumber in head/foot}{parent=structure}
+\setbeamercolor{separation line}{parent=structure,bg=structure.fg}
+%\setbeamercolor{hook}{use=palette quaternary,fg=palette quaternary.bg}
+
+\mode<all>

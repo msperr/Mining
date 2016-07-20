@@ -1,0 +1,208 @@
+\documentclass[table]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{media9}
+\usepackage{xcolor}
+
+\usetheme[headline=section, footlineleft=empty, footlinecenter=empty, footlineright=frames]{TUMCD}
+\usefonttheme{professionalfonts}
+
+\title[Kurzform]{Open Cast Mining}
+\author{InYoung Choi, Olivia Kaufmann, Martin Sperr, Florian Wuttke}
+\date{July 09, 2016}
+
+\begin{document}
+
+\AtBeginSection{
+	\begin{frame}[c]
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\begin{frame}[c]
+	\begin{center}
+		\large{Case Studies Nonlinear Optimization}
+	\end{center}
+	\vspace{0.5cm}
+	\begin{center}
+		\Huge{\textcolor{TUMblue2}{Open Cast Mining}}
+	\end{center}
+	\begin{center}
+		\large{Presentation for Siemens}
+	\end{center}
+	\vspace{0.5cm}
+	\begin{center}
+		July 20, 2016
+	\end{center}
+	\vspace{0.5cm}
+	\begin{center}
+		\small{InYoung Choi, Olivia Kaufmann, Martin Sperr, Florian Wuttke}
+	\end{center}
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{Table of Contents}
+	\tableofcontents
+\end{frame}
+
+\input{tex/Project_Overview}
+
+\input{tex/Physical_Model}
+
+%\input{tex/Visualization}
+
+\input{tex/Parameter_Identification_Physical_Model}
+
+\input{tex/Parameter_Optimization}
+
+%------------------------------------------------------------------------- Summary ---------------------------------------------------------------------------------------
+
+\section{Summary}
+
+\begin{frame}[c]
+	\frametitle{Summary}
+
+	\begin{columns}
+		\onslide<1->
+		\column{.5\linewidth}
+			\includegraphics[trim=30cm 5cm 30cm 23cm, clip=true, width=\linewidth]{img/Excavator_results}
+		
+		\onslide<2>
+		\column{.5\linewidth}
+			\includegraphics[width=\linewidth]{img/Blackbox_4}
+	\end{columns}
+\end{frame}
+
+\appendix
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+
+\AtBeginSection{ }
+
+\begin{frame}[c]
+	\frametitle{Appendix}
+\end{frame}
+
+\section{Parameter Identification: Physical Model}
+
+\begin{frame}
+    \frametitle{Problem Formulation}
+    Natural approach: Optimal Control Problem
+    \begin{align*}
+        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
+        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
+                            & & p & \geq 0 & & \\
+    \end{align*}
+
+    \begin{tabular}{ll}
+        state & $ x = (s,\theta,\dot{s},\dot{\theta})^T $ \\
+        parameters & $ p = (p_1,...,p_k)^T $ \\
+        control & $ \bar{u} = (\tau_1,\tau_2)^T $ \\
+        desired motion & $\bar{x}$ \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem Formulation}
+
+    Input:
+    \begin{itemize}
+        \item{control $\bar{u}$}
+        \item{desired motion $\bar{x}$ related to $\bar{u}$}
+    \end{itemize}
+		
+    Output:
+    \begin{itemize}
+        \item{parameters $p$ of the excavator}
+        \item{x, but not of interest}
+    \end{itemize}
+
+    Idea:
+    \begin{itemize}
+        \item{get rid of variable $x$}
+        \item{set $x := \bar{x}$}
+        \item{solve a relaxed problem}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem Formulation}
+
+    Original Problem
+    \begin{align*}
+        \min_{x,p} & & \frac{1}{2} \| \bar{x} - x \|^2 & & \\
+        \operatorname{s.t.} & & \Phi(x,\bar{u},p) & = 0 & & \\
+                            & & p & \geq 0 & & \\
+    \end{align*}
+
+    Set $x \leftarrow \bar{x}$
+
+    Reinterpreted Problem
+    \begin{align*}
+        \min_{p}  & & \frac{1}{2} \| \Phi(\bar{x},\bar{u},p) \|^2 & & \\
+        \operatorname{s.t.} & & p & \geq 0 & & \\
+    \end{align*}
+\end{frame}
+
+\section{Parameter Identification: Black Box Model}
+
+\begin{frame}[c]
+	\frametitle{Example Trajectories}
+	\vspace{-.5cm}
+	\begin{columns}[c]
+		\column{.33\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example3_Joystick}
+			\vskip 0mm
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example2_Joystick}
+		\end{figure}
+		\column{.33\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example3_Torques}
+			\vskip 0mm
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example2_Torques}
+		\end{figure}
+		\column{.33\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example3_Position}
+			\vskip 0mm
+			\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/Example2_Position}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{Influence of the Parameters}
+	\vspace{-.5cm}
+	\begin{columns}[c]
+		\column{.33\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/inertia_engine}
+				\vskip 0mm
+				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/friction}
+			\end{figure}
+		\column{.33\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/inertia_yy}
+				\vskip 0mm
+				\includegraphics[trim=4cm 9cm 4cm 9.5cm, clip=true, width=\linewidth]{img/mass}
+			\end{figure}
+	\end{columns}
+\end{frame}
+
+\setcounter{framenumber}{\value{finalframe}}
+
+\end{document}
+
